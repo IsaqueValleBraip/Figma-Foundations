@@ -1,0 +1,387 @@
+{
+  "_meta": {
+    "$version": "2",
+    "$figmaCollection": "↳ Aliases",
+    "$collectionId": "VariableCollectionId:1427:7578",
+    "$modes": [
+      {
+        "name": "Mode 1",
+        "key": "value"
+      }
+    ],
+    "$aliasTargets": [
+      "tokens/colors.json",
+      "tokens/primitives.json"
+    ]
+  },
+  "bg": {
+    "aside": {
+      "$type": "color",
+      "$value": "{global/bg/aside}"
+    },
+    "branding-aside": {
+      "$type": "color",
+      "$value": "{global/icons/brand-aside}"
+    },
+    "branding-primary": {
+      "$type": "color",
+      "$value": "{brand/core/surface/primary}"
+    },
+    "branding-secondary": {
+      "$type": "color",
+      "$value": "{purple/secondary}"
+    },
+    "branding-tertiary": {
+      "$type": "color",
+      "$value": "{purple/primary}"
+    },
+    "primary": {
+      "$type": "color",
+      "$value": "{global/bg/primary}"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{global/bg/secondary}"
+    },
+    "surface-aside": {
+      "$type": "color",
+      "$value": "{global/surfaces/bg/aside}"
+    },
+    "surface-primary": {
+      "$type": "color",
+      "$value": "{global/surfaces/bg/primary}"
+    },
+    "surface-secondary": {
+      "$type": "color",
+      "$value": "{global/surfaces/bg/secondary}"
+    },
+    "surface-tertiary": {
+      "$type": "color",
+      "$value": "{global/surfaces/bg/tertiary}"
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "{global/bg/tertiary}"
+    }
+  },
+  "blue": {
+    "primary": {
+      "$type": "color",
+      "$value": "{state/blue/primary}"
+    },
+    "quaternary": {
+      "$type": "color",
+      "$value": "{state/blue/quaternary}"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{state/blue/secundary}"
+    },
+    "static": {
+      "$type": "color",
+      "$value": "{colors/auxiliary/blue/600}"
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "{state/blue/tertiary}"
+    },
+    "text": {
+      "$type": "color",
+      "$value": "{state/blue/text}"
+    }
+  },
+  "brand": {
+    "accent": {
+      "primary": {
+        "$type": "color",
+        "$value": "{brand/accent/surface/primary}",
+        "$description": "TP-1697 · surface/brand-accent/default -> Brand/accent/surface/primary"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{brand/accent/surface/secundary}",
+        "$description": "TP-1697 · surface/brand-accent/hover -> Brand/accent/surface/secundary"
+      },
+      "static": {
+        "$type": "color",
+        "$value": "{colors/brand/secondary/600}",
+        "$description": "Valor fixo, independente de tema — alias direto ao Primitive."
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "{brand/accent/surface/tertiary}",
+        "$description": "TP-1697 · surface/brand-accent/active -> Brand/accent/surface/tertiary"
+      }
+    },
+    "core": {
+      "primary": {
+        "$type": "color",
+        "$value": "{brand/core/surface/primary}",
+        "$description": "TP-1697 · surface/brand-core/default -> Brand/core/surface/primary"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{brand/core/surface/secundary}",
+        "$description": "TP-1697 · surface/brand-core/hover -> Brand/core/surface/secundary"
+      },
+      "static": {
+        "$type": "color",
+        "$value": "{colors/brand/primary/600}",
+        "$description": "Valor fixo, independente de tema — alias direto ao Primitive."
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "{brand/core/surface/tertiary}",
+        "$description": "TP-1697 · surface/brand-core/active -> Brand/core/surface/tertiary"
+      }
+    }
+  },
+  "green": {
+    "primary": {
+      "$type": "color",
+      "$value": "{state/green/primary}"
+    },
+    "quaternary": {
+      "$type": "color",
+      "$value": "{state/green/quaternary}"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{state/green/secundary}"
+    },
+    "static": {
+      "$type": "color",
+      "$value": "{colors/auxiliary/green/600}"
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "{state/green/tertiary}"
+    },
+    "text": {
+      "$type": "color",
+      "$value": "{state/green/text}"
+    }
+  },
+  "neutral": {
+    "primary": {
+      "$type": "color",
+      "$value": "{state/neutral/primary}"
+    },
+    "quaternary": {
+      "$type": "color",
+      "$value": "{state/neutral/quaternary}"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{state/neutral/secundary}"
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "{state/neutral/tertiary}"
+    },
+    "text": {
+      "$type": "color",
+      "$value": "{state/neutral/text}"
+    }
+  },
+  "on-active": {
+    "$type": "color",
+    "$value": "{global/base/white}",
+    "$description": "TP-1697 · on-active -> Global/base/white"
+  },
+  "orange": {
+    "primary": {
+      "$type": "color",
+      "$value": "{state/orange/primary}"
+    },
+    "quaternary": {
+      "$type": "color",
+      "$value": "{state/orange/quaternary}"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{state/orange/secundary}"
+    },
+    "static": {
+      "$type": "color",
+      "$value": "{colors/auxiliary/orange/600}"
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "{state/orange/tertiary}"
+    },
+    "text": {
+      "$type": "color",
+      "$value": "{state/orange/text}"
+    }
+  },
+  "overlay": {
+    "hover": {
+      "$type": "color",
+      "$value": "{global/base/hover-overlay}"
+    },
+    "pressed": {
+      "$type": "color",
+      "$value": "{global/base/dark-overlay}"
+    }
+  },
+  "pink": {
+    "primary": {
+      "$type": "color",
+      "$value": "{state/pink/primary}"
+    },
+    "quaternary": {
+      "$type": "color",
+      "$value": "{state/pink/quaternary}"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{state/pink/secundary}"
+    },
+    "static": {
+      "$type": "color",
+      "$value": "{colors/auxiliary/pink/600}"
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "{state/pink/tertiary}"
+    },
+    "text": {
+      "$type": "color",
+      "$value": "{state/pink/text}"
+    }
+  },
+  "purple": {
+    "primary": {
+      "$type": "color",
+      "$value": "{state/purple/primary}"
+    },
+    "quaternary": {
+      "$type": "color",
+      "$value": "{state/purple/quaternary}"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{state/purple/secundary}"
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "{state/purple/tertiary}"
+    },
+    "text": {
+      "$type": "color",
+      "$value": "{state/purple/text}"
+    }
+  },
+  "red": {
+    "primary": {
+      "$type": "color",
+      "$value": "{state/red/primary}"
+    },
+    "quaternary": {
+      "$type": "color",
+      "$value": "{state/red/quaternary}"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{state/red/secundary}"
+    },
+    "static": {
+      "$type": "color",
+      "$value": "{colors/auxiliary/red/600}"
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "{state/red/tertiary}"
+    },
+    "text": {
+      "$type": "color",
+      "$value": "{state/red/text}"
+    }
+  },
+  "stroke": {
+    "primary": {
+      "$type": "color",
+      "$value": "{global/surfaces/stroke/primary}"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{global/surfaces/stroke/secondary}"
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "{global/surfaces/stroke/tertiary}"
+    }
+  },
+  "surface": {
+    "brand-core": {
+      "active": {
+        "$type": "color",
+        "$value": "{brand/core/surface/tertiary}",
+        "$description": "TP-1697 · surface/brand-core/active -> Brand/core/surface/tertiary"
+      },
+      "default": {
+        "$type": "color",
+        "$value": "{brand/core/surface/primary}",
+        "$description": "TP-1697 · surface/brand-core/default -> Brand/core/surface/primary"
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{brand/core/surface/secundary}",
+        "$description": "TP-1697 · surface/brand-core/hover -> Brand/core/surface/secundary"
+      }
+    }
+  },
+  "text": {
+    "primary": {
+      "$type": "color",
+      "$value": "{global/text/primary}"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{global/text/secondary}"
+    },
+    "surface-primary": {
+      "$type": "color",
+      "$value": "{global/surfaces/text/primary}"
+    },
+    "surface-secondary": {
+      "$type": "color",
+      "$value": "{global/surfaces/text/secondary}"
+    },
+    "surface-tertiary": {
+      "$type": "color",
+      "$value": "{global/surfaces/text/tertiary}"
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "{state/neutral/quaternary}"
+    }
+  },
+  "yellow": {
+    "primary": {
+      "$type": "color",
+      "$value": "{state/yellow/primary}"
+    },
+    "quaternary": {
+      "$type": "color",
+      "$value": "{state/yellow/quaternary}"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{state/yellow/secundary}"
+    },
+    "static": {
+      "$type": "color",
+      "$value": "{colors/auxiliary/yellow/600}"
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "{state/yellow/tertiary}"
+    },
+    "text": {
+      "$type": "color",
+      "$value": "{state/yellow/text}"
+    }
+  }
+}

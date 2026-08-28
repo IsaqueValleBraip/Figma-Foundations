@@ -60,12 +60,16 @@ As collections priorizadas da biblioteca de foundations no Figma sao espelhadas 
 | Collection no Figma | Arquivo | Modos | Tokens |
 |---|---|---|---|
 | `Primitive` | `tokens/primitives.json` | value | 149 |
-| `❖ Color` | `tokens/colors.json` | light, dark | 310 |
+| `❖ Color` | `tokens/colors.json` | light, dark | 317 |
 | `Typography` | `tokens/typography.json` | value | 39 |
 | `Spacing` | `tokens/spacing.json` | value | 40 |
-| `Layout` | `tokens/layout.json` | desktop, tablet, mobile | 24 |
+| `Layout` | `tokens/layout.json` | desktop, tablet, mobile | 25 |
+| `↳ Aliases` | `tokens/aliases.json` | herda light, dark | 81 |
 
-`Primitive` e a base: as outras collections referenciam seus valores por alias.
+`Primitive` e a base e `Aliases` e o topo: Primitive -> Color -> Aliases. O build
+resolve a cadeia toda ate o literal, entao nenhuma variavel gerada contem `{ref}`.
+`Aliases` nao tem modo proprio no Figma (Mode 1), mas resolve para tokens de `Color`,
+entao herda light e dark.
 Quando houver conflito com qualquer outra collection do arquivo, estas cinco vencem.
 
 Para atualizar apos mudanca no Figma: re-sincronizar o SSOT de tokens e rodar

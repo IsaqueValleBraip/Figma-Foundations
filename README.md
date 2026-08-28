@@ -6,7 +6,7 @@ Ponte entre a biblioteca de componentes no Figma e os componentes Vue, via
 - CLI: `@figma/code-connect@1` — parser `html`, label `Vue`
   (a v2 removeu os parsers de framework; para Vue a v1 e o caminho suportado)
 - Design tokens: mirror versionado das collections priorizadas da biblioteca de
-  foundations no Figma — `Primitive`, `Typography`, `Spacing`, `Layout` e `Color`.
+  foundations no Figma — `Primitive`, `Typography`, `Spacing`, `Layout`, `Color` e `Aliases`.
 
 ## Requisito de caminho
 
@@ -40,10 +40,10 @@ cp figma.config.example.json figma.config.json   # preencher a URL da biblioteca
 
 ## Design tokens
 
-562 tokens nas cinco collections priorizadas, consumiveis de duas formas:
+651 tokens nas collections priorizadas, consumiveis de duas formas:
 
 ```ts
-import { color, spacing, typography, layout, primitive } from './tokens'
+import { color, spacing, typography, layout, primitive, alias } from './tokens'
 ```
 
 ```css
@@ -52,10 +52,13 @@ import { color, spacing, typography, layout, primitive } from './tokens'
 
 - `:root` carrega Primitive, Typography, Spacing, o modo `light` de Color e o modo
   `desktop` de Layout.
-- `[data-theme="dark"]` sobrescreve as cores; media queries sobrescrevem Layout nos
+- `[data-theme="dark"]` sobrescreve as cores e os aliases; media queries sobrescrevem Layout nos
   breakpoints de tablet e mobile.
-- `Primitive` alimenta as demais collections: aliases como `{colors/neutral/light/0}`
-  sao resolvidos em tempo de build para o valor final.
+- `Primitive` alimenta as demais collections: referencias como `{colors/neutral/light/0}`
+  sao resolvidas em tempo de build ate o valor final.
+- A collection `Aliases` e a camada semantica: cada token aponta para um token de
+  `Color` (ou para outro alias). O build segue a cadeia inteira e emite o valor
+  literal, entao `--braip-alias-*` ja sai como cor resolvida em cada modo.
 - Arquivos gerados — nao editar a mao. A fonte e o Figma; o gerador vive em `scripts/`
   (local) e le o mirror do SSOT de tokens.
 
