@@ -27,6 +27,8 @@ cp figma.config.example.json figma.config.json   # preencher a URL da biblioteca
 
 | Comando | O que faz |
 |---|---|
+| `npm run dev` | Sobe o playground Vite em `localhost:5175` para preview local dos componentes |
+| `npm run build` / `npm run preview` | Build e preview estatico do playground |
 | `npm run figma:list` | Baixa os componentes publicados -> `docs/figma-components.json` (script e saida sao locais, fora do git) |
 | `npm run cc:create -- "<url-do-node>" --outDir src/components` | Gera o boilerplate de conexao |
 | `npm run cc:parse` | Valida os arquivos localmente |
