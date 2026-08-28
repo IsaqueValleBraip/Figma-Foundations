@@ -5,3 +5,4 @@ dist/
 *.log
 docs/figma-components.json
 figma.config.json
+scripts/

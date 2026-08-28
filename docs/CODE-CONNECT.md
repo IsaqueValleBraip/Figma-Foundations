@@ -8,7 +8,8 @@ Parser `html` (opcao oficial do Code Connect para Vue), CLI pinado em
 
 1. **Descobrir componentes publicados**
    ```bash
-   npm run figma:list      # gera docs/figma-components.json (key, nodeId, url) — arquivo local
+   npm run figma:list      # gera docs/figma-components.json (key, nodeId, url)
+   # scripts/ e docs/figma-components.json nao sao versionados
    ```
 2. **Gerar um arquivo de conexao a partir do node**
    ```bash

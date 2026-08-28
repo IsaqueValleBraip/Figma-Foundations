@@ -27,7 +27,7 @@ cp figma.config.example.json figma.config.json   # preencher a URL da biblioteca
 
 | Comando | O que faz |
 |---|---|
-| `npm run figma:list` | Baixa os componentes publicados -> `docs/figma-components.json` (local) |
+| `npm run figma:list` | Baixa os componentes publicados -> `docs/figma-components.json` (script e saida sao locais, fora do git) |
 | `npm run cc:create -- "<url-do-node>" --outDir src/components` | Gera o boilerplate de conexao |
 | `npm run cc:parse` | Valida os arquivos localmente |
 | `npm run cc:publish -- --dry-run` | Testa a publicacao sem gravar |
