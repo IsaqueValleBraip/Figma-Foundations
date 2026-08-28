@@ -19,7 +19,7 @@ withDefaults(defineProps<{
 .braip-button {
   border: 1px solid transparent;
   border-radius: var(--braip-space-radius-sm);
-  font-family: var(--braip-font-stack-text);
+  font-family: var(--braip-type-font-family-text);
   font-weight: var(--braip-type-weight-semi-bold);
   cursor: pointer;
 }

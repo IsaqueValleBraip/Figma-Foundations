@@ -68,4 +68,3 @@ compatibilidade.
 - Dez pendencias de referencia documentadas em `src/foundations/known-issues.json`,
   todas com origem no arquivo do Figma. Ver
   [docs/workflows/token-sync.md](docs/workflows/token-sync.md).
-- Binarios de fonte nao versionados — ver [docs/fonts/README.md](docs/fonts/README.md).

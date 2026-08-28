@@ -69,5 +69,7 @@ Prefixo `--braip-*`. Em TypeScript: `primitive`, `color`, `alias`, `typography`,
 - **Responsividade explicita.** 24 tokens de Typography e Spacing resolvem atraves de `Layout`.
   No CSS eles recebem sobrescrita nas media queries; em TS, `typography` e `spacing` seguem
   com o valor desktop (API estavel) e `responsive` expoe o valor por viewport.
-- **Fontes sem binario.** Os arquivos dependem de licenca e nao estao versionados;
-  `src/fonts/index.css` traz `@font-face` comentado e uma cadeia de fallback.
+- **Sem camada de fontes.** As familias vivem so nos tokens de `Typography`
+  (`--braip-type-font-family-title` e `--braip-type-font-family-text`); consumir e usar
+  a variavel direto. Nao ha `@font-face` nem binarios no repositorio: carregar as
+  familias e responsabilidade da aplicacao que consome a biblioteca.

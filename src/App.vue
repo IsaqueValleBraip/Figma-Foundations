@@ -44,7 +44,7 @@ const brandSwatches = Object.entries(theme.light.color.brand.core.surface)
 <style>
 body {
   margin: 0;
-  font-family: var(--braip-font-stack-text);
+  font-family: var(--braip-type-font-family-text);
   background: var(--braip-alias-bg-primary);
   color: var(--braip-alias-text-primary);
 }
@@ -56,7 +56,7 @@ body {
 }
 
 .playground h1 {
-  font-family: var(--braip-font-stack-title);
+  font-family: var(--braip-type-font-family-title);
   font-size: var(--braip-type-size-title-h5);
   line-height: var(--braip-type-line-height-title-h5);
   margin: 0 0 var(--braip-space-base-xxs);
