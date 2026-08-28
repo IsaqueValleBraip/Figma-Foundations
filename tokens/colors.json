@@ -1394,6 +1394,59 @@
           }
         }
       }
+    },
+    "logo": {
+      "shape": {
+        "blue": {
+          "$type": "color",
+          "$value": {
+            "light": "{colors/auxiliary/blue/600}",
+            "dark": "{colors/auxiliary/blue/500}"
+          }
+        },
+        "green": {
+          "$type": "color",
+          "$value": {
+            "light": "{colors/brand/secondary/600}",
+            "dark": "{colors/brand/secondary/500}"
+          }
+        },
+        "grey": {
+          "$type": "color",
+          "$value": {
+            "light": "{colors/neutral/light/700}",
+            "dark": "{colors/neutral/dark/1100}"
+          }
+        },
+        "orange": {
+          "$type": "color",
+          "$value": {
+            "light": "{colors/auxiliary/orange/600}",
+            "dark": "{colors/auxiliary/orange/500}"
+          }
+        },
+        "pink": {
+          "$type": "color",
+          "$value": {
+            "light": "{colors/auxiliary/pink/600}",
+            "dark": "{colors/auxiliary/pink/500}"
+          }
+        },
+        "purple": {
+          "$type": "color",
+          "$value": {
+            "light": "{colors/brand/primary/600}",
+            "dark": "{colors/neutral/light/0}"
+          }
+        },
+        "white": {
+          "$type": "color",
+          "$value": {
+            "light": "{colors/neutral/light/0}",
+            "dark": "{colors/neutral/light/0}"
+          }
+        }
+      }
     }
   },
   "effect": {
@@ -1885,8 +1938,8 @@
         "primary": {
           "$type": "color",
           "$value": {
-            "light": "{colors/neutral/light/300}",
-            "dark": "{colors/neutral/dark/400}"
+            "light": "{colors/neutral/light/700}",
+            "dark": "{colors/neutral/dark/1000}"
           }
         },
         "secondary": {

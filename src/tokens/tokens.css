@@ -333,6 +333,13 @@
   --braip-color-brand-core-text-primary: #6D36FB;
   --braip-color-brand-core-text-secundary: #8A5EFC;
   --braip-color-brand-core-text-tertiary: #C5AFFD;
+  --braip-color-brand-logo-shape-blue: #3399FF;
+  --braip-color-brand-logo-shape-green: #99FF33;
+  --braip-color-brand-logo-shape-grey: #8383A4;
+  --braip-color-brand-logo-shape-orange: #FF9900;
+  --braip-color-brand-logo-shape-pink: #FF3FCE;
+  --braip-color-brand-logo-shape-purple: #6D36FB;
+  --braip-color-brand-logo-shape-white: #FFFFFF;
   --braip-color-effect-blue-20: #3399FF33;
   --braip-color-effect-blue-40: #3399FF66;
   --braip-color-effect-blue-60: #3399FF99;
@@ -398,7 +405,7 @@
   --braip-color-global-surfaces-bg-tertiary: #626284;
   --braip-color-global-surfaces-stroke-brand-primary: #6D36FB;
   --braip-color-global-surfaces-stroke-brand-secondary: #F4F0FF;
-  --braip-color-global-surfaces-stroke-primary: #DCDCF0;
+  --braip-color-global-surfaces-stroke-primary: #8383A4;
   --braip-color-global-surfaces-stroke-secondary: #A9A9CC;
   --braip-color-global-surfaces-stroke-tertiary: #777799;
   --braip-color-global-surfaces-text-aux-alert: #FFAF36;
@@ -564,6 +571,7 @@
   --braip-layout-font-size-h6: 32px;
   --braip-layout-font-size-h7: 24px;
   --braip-layout-font-size-h8: 18px;
+  --braip-layout-grid-content-width: 1208px;
   --braip-layout-grid-device: 1440px;
   --braip-layout-grid-gap: 32px;
   --braip-layout-grid-margin: 112px;
@@ -752,6 +760,13 @@
   --braip-color-brand-core-text-primary: #6D36FB;
   --braip-color-brand-core-text-secundary: #572BC9;
   --braip-color-brand-core-text-tertiary: #412097;
+  --braip-color-brand-logo-shape-blue: #6BB5FF;
+  --braip-color-brand-logo-shape-green: #ADFF5C;
+  --braip-color-brand-logo-shape-grey: #9D9DAB;
+  --braip-color-brand-logo-shape-orange: #FFAF36;
+  --braip-color-brand-logo-shape-pink: #FF68D9;
+  --braip-color-brand-logo-shape-purple: #FFFFFF;
+  --braip-color-brand-logo-shape-white: #FFFFFF;
   --braip-color-effect-blue-20: #6BB5FF33;
   --braip-color-effect-blue-40: #6BB5FF66;
   --braip-color-effect-blue-60: #6BB5FF99;
@@ -813,7 +828,7 @@
   --braip-color-global-surfaces-bg-brand-secondary: #A786FD;
   --braip-color-global-surfaces-stroke-brand-primary: #8A5EFC;
   --braip-color-global-surfaces-stroke-brand-secondary: #160B32;
-  --braip-color-global-surfaces-stroke-primary: #343438;
+  --braip-color-global-surfaces-stroke-primary: #8B8B98;
   --braip-color-global-surfaces-stroke-secondary: #505057;
   --braip-color-global-surfaces-stroke-tertiary: #6D6D76;
   --braip-color-global-surfaces-text-aux-alert: #FFE2B7;
@@ -901,6 +916,7 @@
     --braip-layout-font-size-h6: 24px;
     --braip-layout-font-size-h7: 18px;
     --braip-layout-font-size-h8: 14px;
+    --braip-layout-grid-content-width: 680px;
     --braip-layout-grid-device: 744px;
     --braip-layout-grid-gap: 24px;
     --braip-layout-grid-margin: 32px;
@@ -930,6 +946,7 @@
     --braip-layout-font-size-h6: 24px;
     --braip-layout-font-size-h7: 18px;
     --braip-layout-font-size-h8: 14px;
+    --braip-layout-grid-content-width: 358px;
     --braip-layout-grid-device: 390px;
     --braip-layout-grid-gap: 16px;
     --braip-layout-grid-margin: 16px;

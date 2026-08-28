@@ -474,6 +474,17 @@ export const color = {
         "secundary": "#8A5EFC",
         "tertiary": "#C5AFFD"
       }
+    },
+    "logo": {
+      "shape": {
+        "blue": "#3399FF",
+        "green": "#99FF33",
+        "grey": "#8383A4",
+        "orange": "#FF9900",
+        "pink": "#FF3FCE",
+        "purple": "#6D36FB",
+        "white": "#FFFFFF"
+      }
     }
   },
   "effect": {
@@ -572,7 +583,7 @@ export const color = {
       "stroke": {
         "brand-primary": "#6D36FB",
         "brand-secondary": "#F4F0FF",
-        "primary": "#DCDCF0",
+        "primary": "#8383A4",
         "secondary": "#A9A9CC",
         "tertiary": "#777799"
       },
@@ -958,6 +969,17 @@ export const color = {
         "secundary": "#572BC9",
         "tertiary": "#412097"
       }
+    },
+    "logo": {
+      "shape": {
+        "blue": "#6BB5FF",
+        "green": "#ADFF5C",
+        "grey": "#9D9DAB",
+        "orange": "#FFAF36",
+        "pink": "#FF68D9",
+        "purple": "#FFFFFF",
+        "white": "#FFFFFF"
+      }
     }
   },
   "effect": {
@@ -1052,7 +1074,7 @@ export const color = {
       "stroke": {
         "brand-primary": "#8A5EFC",
         "brand-secondary": "#160B32",
-        "primary": "#343438",
+        "primary": "#8B8B98",
         "secondary": "#505057",
         "tertiary": "#6D6D76"
       },
@@ -1294,6 +1316,7 @@ export const layout = {
     }
   },
   "grid": {
+    "content-width": "1208px",
     "device": "1440px",
     "gap": "32px",
     "margin": "112px",
@@ -1330,6 +1353,7 @@ export const layout = {
     }
   },
   "grid": {
+    "content-width": "680px",
     "device": "744px",
     "gap": "24px",
     "margin": "32px",
@@ -1366,6 +1390,7 @@ export const layout = {
     }
   },
   "grid": {
+    "content-width": "358px",
     "device": "390px",
     "gap": "16px",
     "margin": "16px",

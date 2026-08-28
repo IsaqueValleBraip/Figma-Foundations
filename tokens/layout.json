@@ -208,6 +208,14 @@
     }
   },
   "grid": {
+    "content-width": {
+      "$type": "dimension",
+      "$value": {
+        "desktop": 1208,
+        "mobile": 358,
+        "tablet": 680
+      }
+    },
     "device": {
       "$type": "dimension",
       "$value": {
