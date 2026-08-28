@@ -1,0 +1,687 @@
+{
+  "_meta": {
+    "$version": "2",
+    "$figmaCollection": "Primitive",
+    "$collectionId": "VariableCollectionId:954:538",
+    "$modes": [
+      {
+        "name": "Value",
+        "key": "value"
+      }
+    ],
+    "$aliasTargets": []
+  },
+  "colors": {
+    "auxiliary": {
+      "blue": {
+        "100": {
+          "$type": "color",
+          "$value": "#E9F4FF"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#C2E2FF"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#ADD6FF"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#96CAFF"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#6BB5FF"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#3399FF"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#1D88F3"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#1571CD"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#0A5FB4"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#094179"
+        }
+      },
+      "green": {
+        "100": {
+          "$type": "color",
+          "$value": "#E5FFE1"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#BFFFB4"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#A4F497"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#8BE37C"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#72D761"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#5EC34D"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#4BB639"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#399929"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#297A1B"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#1B5B10"
+        }
+      },
+      "orange": {
+        "100": {
+          "$type": "color",
+          "$value": "#FFF3E0"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#FFE2B7"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#FFD493"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#FFC46B"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#FFAF36"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#FF9900"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#D88100"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#BA7002"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#9C5E00"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#774700"
+        }
+      },
+      "pink": {
+        "100": {
+          "$type": "color",
+          "$value": "#FFE5F9"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#FFBCEE"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#FFA0E7"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#FF8AE1"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#FF68D9"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#FF3FCE"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#DF32B3"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#C22199"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#A61381"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#79005B"
+        }
+      },
+      "red": {
+        "100": {
+          "$type": "color",
+          "$value": "#FFF3F3"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#FFD7D7"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#FFB8B8"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#FF9797"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#FE5F5F"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#FF2E2E"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#CA1515"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#9E0B0B"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#750000"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#4E0000"
+        }
+      },
+      "yellow": {
+        "100": {
+          "$type": "color",
+          "$value": "#FFF9DE"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#FFF3B5"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#FFED8C"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#FFE871"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#FFE24D"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#FFD600"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#DEBB00"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#B99C03"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#A18803"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#7D6A00"
+        }
+      }
+    },
+    "brand": {
+      "primary": {
+        "100": {
+          "$type": "color",
+          "$value": "#F4F0FF"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#E2D7FE"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#C5AFFD"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#A786FD"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#8A5EFC"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#6D36FB"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#572BC9"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#412097"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#2C1664"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#160B32"
+        }
+      },
+      "secondary": {
+        "100": {
+          "$type": "color",
+          "$value": "#F5FFEB"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#EBFFD6"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#D6FFAD"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#C2FF85"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#ADFF5C"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#99FF33"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#7ACC29"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#5C991F"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#3D6614"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#1F330A"
+        }
+      }
+    },
+    "neutral": {
+      "dark": {
+        "0": {
+          "$type": "color",
+          "$value": "#0B0B0E"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#0D0D12"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#19191E"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#252529"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#343438"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#414146"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#505057"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#5B5B61"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#6D6D76"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#797983"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#8B8B98"
+        },
+        "1100": {
+          "$type": "color",
+          "$value": "#9D9DAB"
+        }
+      },
+      "light": {
+        "0": {
+          "$type": "color",
+          "$value": "#FFFFFF"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#F7F7FC"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#EBEBF8"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#DCDCF0"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#BEBEDD"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#A9A9CC"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#9494B8"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#8383A4"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#777799"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#626284"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#434360"
+        },
+        "1100": {
+          "$type": "color",
+          "$value": "#28283B"
+        }
+      }
+    }
+  },
+  "value": {
+    "space": {
+      "0": {
+        "$type": "dimension",
+        "$value": 0,
+        "$description": "No spacing — flush alignment"
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": 2,
+        "$description": "Micro gaps"
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": 4,
+        "$description": "Icon-to-text"
+      },
+      "6": {
+        "$type": "dimension",
+        "$value": 6,
+        "$description": "Icon-to-text"
+      },
+      "8": {
+        "$type": "dimension",
+        "$value": 8,
+        "$description": "Minimal spacing — tight inline elements"
+      },
+      "12": {
+        "$type": "dimension",
+        "$value": 12,
+        "$description": "Minimal spacing — tight inline elements"
+      },
+      "16": {
+        "$type": "dimension",
+        "$value": 16,
+        "$description": "Base unit — compact padding, small gaps"
+      },
+      "24": {
+        "$type": "dimension",
+        "$value": 24,
+        "$description": "Standard gap — form fields, list items"
+      },
+      "32": {
+        "$type": "dimension",
+        "$value": 32,
+        "$description": "Medium spacing — card padding, section gaps"
+      },
+      "40": {
+        "$type": "dimension",
+        "$value": 40,
+        "$description": "Medium spacing — card padding, section gaps"
+      },
+      "48": {
+        "$type": "dimension",
+        "$value": 48,
+        "$description": "Large spacing — section padding"
+      },
+      "56": {
+        "$type": "dimension",
+        "$value": 56,
+        "$description": "Layout dimension — wide content max-width"
+      },
+      "64": {
+        "$type": "dimension",
+        "$value": 64,
+        "$description": "XL spacing — major section dividers"
+      },
+      "72": {
+        "$type": "dimension",
+        "$value": 72,
+        "$description": "Layout spacing — content blocks"
+      },
+      "80": {
+        "$type": "dimension",
+        "$value": 80,
+        "$description": "Layout spacing — large content blocks"
+      },
+      "88": {
+        "$type": "dimension",
+        "$value": 88,
+        "$description": "Layout spacing — extended blocks"
+      },
+      "96": {
+        "$type": "dimension",
+        "$value": 96,
+        "$description": "Layout dimension — wide content max-width"
+      },
+      "112": {
+        "$type": "dimension",
+        "$value": 112,
+        "$description": "Layout dimension — wide content max-width"
+      },
+      "120": {
+        "$type": "dimension",
+        "$value": 120,
+        "$description": "Section height — compact containers"
+      },
+      "128": {
+        "$type": "dimension",
+        "$value": 128,
+        "$description": "Layout dimension — wide content max-width"
+      },
+      "152": {
+        "$type": "dimension",
+        "$value": 152,
+        "$description": "Section height — small containers"
+      },
+      "160": {
+        "$type": "dimension",
+        "$value": 160,
+        "$description": "Section height — medium containers"
+      },
+      "192": {
+        "$type": "dimension",
+        "$value": 192,
+        "$description": "Section height — medium containers"
+      },
+      "224": {
+        "$type": "dimension",
+        "$value": 224,
+        "$description": "Section height — medium containers"
+      },
+      "240": {
+        "$type": "dimension",
+        "$value": 240,
+        "$description": "Section height — standard containers"
+      },
+      "256": {
+        "$type": "dimension",
+        "$value": 256,
+        "$description": "Layout dimension — wide content max-width"
+      },
+      "268": {
+        "$type": "dimension",
+        "$value": 268,
+        "$description": "Section height — standard containers"
+      },
+      "300": {
+        "$type": "dimension",
+        "$value": 300,
+        "$description": "Section height — large containers"
+      },
+      "320": {
+        "$type": "dimension",
+        "$value": 320,
+        "$description": "Layout dimension — wide content max-width"
+      },
+      "368": {
+        "$type": "dimension",
+        "$value": 368,
+        "$description": "Layout dimension — content areas"
+      },
+      "384": {
+        "$type": "dimension",
+        "$value": 384,
+        "$description": "Layout dimension — wide content max-width"
+      },
+      "400": {
+        "$type": "dimension",
+        "$value": 400,
+        "$description": "Layout dimension — content areas"
+      },
+      "468": {
+        "$type": "dimension",
+        "$value": 468,
+        "$description": "Layout dimension — panels, sidebars"
+      },
+      "500": {
+        "$type": "dimension",
+        "$value": 500,
+        "$description": "Layout dimension — panels, sidebars"
+      },
+      "512": {
+        "$type": "dimension",
+        "$value": 512,
+        "$description": "Layout dimension — wide content max-width"
+      },
+      "568": {
+        "$type": "dimension",
+        "$value": 568,
+        "$description": "Layout dimension — main content"
+      },
+      "600": {
+        "$type": "dimension",
+        "$value": 600,
+        "$description": "Layout dimension — wide panels"
+      },
+      "640": {
+        "$type": "dimension",
+        "$value": 640,
+        "$description": "Layout dimension — wide content max-width"
+      },
+      "668": {
+        "$type": "dimension",
+        "$value": 668,
+        "$description": "Layout dimension — main content"
+      },
+      "700": {
+        "$type": "dimension",
+        "$value": 700,
+        "$description": "Layout dimension — main content"
+      },
+      "768": {
+        "$type": "dimension",
+        "$value": 768,
+        "$description": "Layout dimension — main content"
+      },
+      "800": {
+        "$type": "dimension",
+        "$value": 800,
+        "$description": "Layout dimension — content max-width"
+      },
+      "960": {
+        "$type": "dimension",
+        "$value": 960,
+        "$description": "Layout dimension — wide content max-width"
+      },
+      "968": {
+        "$type": "dimension",
+        "$value": 968,
+        "$description": "Layout dimension — wide content max-width"
+      },
+      "1000": {
+        "$type": "dimension",
+        "$value": 1000,
+        "$description": "Layout dimension — wide content max-width"
+      }
+    }
+  }
+}

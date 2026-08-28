@@ -1,0 +1,227 @@
+{
+  "_meta": {
+    "$version": "2",
+    "$figmaCollection": "Typography",
+    "$collectionId": "VariableCollectionId:954:936",
+    "$modes": [
+      {
+        "name": "Plataforma",
+        "key": "value"
+      }
+    ],
+    "$aliasTargets": [
+      "tokens/layout.json"
+    ]
+  },
+  "font-family": {
+    "text": {
+      "$type": "fontFamily",
+      "$value": "Poppins",
+      "$description": "Font family para textos (Text/Body)"
+    },
+    "title": {
+      "$type": "fontFamily",
+      "$value": "Sora",
+      "$description": "Font family para títulos (Title)"
+    }
+  },
+  "line-height": {
+    "text": {
+      "p1": {
+        "$type": "dimension",
+        "$value": 33.599998474121094,
+        "$description": "Text P1 - Line Height 140% (24 × 1.4)"
+      },
+      "p2": {
+        "$type": "dimension",
+        "$value": 28,
+        "$description": "Text P2 - Line Height 140% (20 × 1.4)"
+      },
+      "p3": {
+        "$type": "dimension",
+        "$value": 28.799999237060547,
+        "$description": "Text P3 - Line Height 160% (18 × 1.6)"
+      },
+      "p4": {
+        "$type": "dimension",
+        "$value": 25.600000381469727,
+        "$description": "Text P4 - Line Height 160% (16 × 1.6)"
+      },
+      "p5": {
+        "$type": "dimension",
+        "$value": 22.399999618530273,
+        "$description": "Text P5 - Line Height 160% (14 × 1.6)"
+      },
+      "p6": {
+        "$type": "dimension",
+        "$value": 19.200000762939453,
+        "$description": "Text P6 - Line Height 160% (12 × 1.6)"
+      },
+      "p7": {
+        "$type": "dimension",
+        "$value": 17.600000381469727,
+        "$description": "Text P7 - Line Height 160% (11 × 1.6)"
+      }
+    },
+    "title": {
+      "display": {
+        "$type": "dimension",
+        "$value": "{font/line-height/display}",
+        "$description": "Title Display - Line Height 140%"
+      },
+      "h1": {
+        "$type": "dimension",
+        "$value": "{font/line-height/h1}",
+        "$description": "Title H1 - Line Height 140% (64 × 1.4)"
+      },
+      "h2": {
+        "$type": "dimension",
+        "$value": "{font/line-height/h2}",
+        "$description": "Title H2 - Line Height 140% (56 × 1.4)"
+      },
+      "h3": {
+        "$type": "dimension",
+        "$value": "{font/line-height/h3}",
+        "$description": "Title H3 - Line Height 140% (48 × 1.4)"
+      },
+      "h4": {
+        "$type": "dimension",
+        "$value": "{font/line-height/h4}",
+        "$description": "Title H4 - Line Height 140% (40 × 1.4)"
+      },
+      "h5": {
+        "$type": "dimension",
+        "$value": "{font/line-height/h5}",
+        "$description": "Title H5 - Line Height 140% (36 × 1.4)"
+      },
+      "h6": {
+        "$type": "dimension",
+        "$value": "{font/line-height/h6}",
+        "$description": "Title H6 - Line Height 140% (32 × 1.4)"
+      },
+      "h7": {
+        "$type": "dimension",
+        "$value": "{font/line-height/h7}",
+        "$description": "Title H7 - Line Height 140% (24 × 1.4)"
+      },
+      "h8": {
+        "$type": "dimension",
+        "$value": "{font/line-height/h8}",
+        "$description": "Title H8 - Line Height 140% (18 × 1.4)"
+      }
+    }
+  },
+  "size": {
+    "text": {
+      "p1": {
+        "$type": "dimension",
+        "$value": 24,
+        "$description": "Text P1 - Font Size 24px"
+      },
+      "p2": {
+        "$type": "dimension",
+        "$value": 20,
+        "$description": "Text P2 - Font Size 20px"
+      },
+      "p3": {
+        "$type": "dimension",
+        "$value": 18,
+        "$description": "Text P3 - Font Size 18px"
+      },
+      "p4": {
+        "$type": "dimension",
+        "$value": 16,
+        "$description": "Text P4 - Font Size 16px"
+      },
+      "p5": {
+        "$type": "dimension",
+        "$value": 14,
+        "$description": "Text P5 - Font Size 14px"
+      },
+      "p6": {
+        "$type": "dimension",
+        "$value": 12,
+        "$description": "Text P6 - Font Size 12px"
+      },
+      "p7": {
+        "$type": "dimension",
+        "$value": 11,
+        "$description": "Text P7 - Font Size 11px"
+      }
+    },
+    "title": {
+      "display": {
+        "$type": "dimension",
+        "$value": "{font/size/display}",
+        "$description": "Title H1 - Font Size 64px"
+      },
+      "h1": {
+        "$type": "dimension",
+        "$value": "{font/size/h1}",
+        "$description": "Title H1 - Font Size 64px"
+      },
+      "h2": {
+        "$type": "dimension",
+        "$value": "{font/size/h2}",
+        "$description": "Title H2 - Font Size 56px"
+      },
+      "h3": {
+        "$type": "dimension",
+        "$value": "{font/size/h3}",
+        "$description": "Title H3 - Font Size 48px"
+      },
+      "h4": {
+        "$type": "dimension",
+        "$value": "{font/size/h4}",
+        "$description": "Title H4 - Font Size 40px"
+      },
+      "h5": {
+        "$type": "dimension",
+        "$value": "{font/size/h5}",
+        "$description": "Title H5 - Font Size 36px"
+      },
+      "h6": {
+        "$type": "dimension",
+        "$value": "{font/size/h6}",
+        "$description": "Title H6 - Font Size 32px"
+      },
+      "h7": {
+        "$type": "dimension",
+        "$value": "{font/size/h7}",
+        "$description": "Title H7 - Font Size 24px"
+      },
+      "h8": {
+        "$type": "dimension",
+        "$value": "{font/size/h8}",
+        "$description": "Title H8 - Font Size 18px"
+      }
+    }
+  },
+  "weight": {
+    "bold": {
+      "$type": "fontWeight",
+      "$value": 700,
+      "$description": "Font weight 700 - Bold"
+    },
+    "extra-bold": {
+      "$type": "fontWeight",
+      "$value": 800,
+      "$description": "Font weight 800 - Extra Bold"
+    },
+    "medium": {
+      "$type": "fontWeight",
+      "$value": 500,
+      "$description": "Font weight 500 - Medium"
+    },
+    "regular": {
+      "$type": "fontWeight",
+      "$value": 400,
+      "$description": "Font weight 400 - Regular"
+    },
+    "semi-bold": {
+      "$type": "fontWeight",
+      "$value": 600,
+      "$description": "Font weight 600 - Semi Bold"
+    }
+  }
+}

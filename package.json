@@ -12,7 +12,8 @@
     "cc:unpublish": "figma connect unpublish",
     "cc:create": "figma connect create",
     "cc:parse": "figma connect parse",
-    "figma:list": "node scripts/list-components.mjs"
+    "figma:list": "node scripts/list-components.mjs",
+    "tokens:build": "node scripts/build-tokens.mjs"
   },
   "devDependencies": {
     "@figma/code-connect": "^1.5.3",

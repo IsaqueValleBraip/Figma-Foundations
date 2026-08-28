@@ -5,7 +5,8 @@ Ponte entre a biblioteca de componentes no Figma e os componentes Vue, via
 
 - CLI: `@figma/code-connect@1` — parser `html`, label `Vue`
   (a v2 removeu os parsers de framework; para Vue a v1 e o caminho suportado)
-- Design tokens nao vivem neste repo.
+- Design tokens: mirror versionado das collections priorizadas da biblioteca de
+  foundations no Figma — `Primitive`, `Typography`, `Spacing`, `Layout` e `Color`.
 
 ## Requisito de caminho
 
@@ -29,12 +30,34 @@ cp figma.config.example.json figma.config.json   # preencher a URL da biblioteca
 |---|---|
 | `npm run dev` | Sobe o playground Vite em `localhost:5175` para preview local dos componentes |
 | `npm run build` / `npm run preview` | Build e preview estatico do playground |
+| `npm run tokens:build -- <dir-do-ssot>` | Regenera `tokens/*.json`, `src/tokens/tokens.css` e `src/tokens/index.ts` |
 | `npm run figma:list` | Baixa os componentes publicados -> `docs/figma-components.json` (script e saida sao locais, fora do git) |
 | `npm run cc:create -- "<url-do-node>" --outDir src/components` | Gera o boilerplate de conexao |
 | `npm run cc:parse` | Valida os arquivos localmente |
 | `npm run cc:publish -- --dry-run` | Testa a publicacao sem gravar |
 | `npm run cc:publish` | Publica no Figma (aparece no Dev Mode) |
 | `npm run cc:unpublish -- --file <arquivo>` | Remove a conexao |
+
+## Design tokens
+
+562 tokens nas cinco collections priorizadas, consumiveis de duas formas:
+
+```ts
+import { color, spacing, typography, layout, primitive } from './tokens'
+```
+
+```css
+@import './tokens/tokens.css';   /* variaveis --braip-* */
+```
+
+- `:root` carrega Primitive, Typography, Spacing, o modo `light` de Color e o modo
+  `desktop` de Layout.
+- `[data-theme="dark"]` sobrescreve as cores; media queries sobrescrevem Layout nos
+  breakpoints de tablet e mobile.
+- `Primitive` alimenta as demais collections: aliases como `{colors/neutral/light/0}`
+  sao resolvidos em tempo de build para o valor final.
+- Arquivos gerados — nao editar a mao. A fonte e o Figma; o gerador vive em `scripts/`
+  (local) e le o mirror do SSOT de tokens.
 
 ## Estado
 

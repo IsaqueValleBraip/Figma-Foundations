@@ -51,3 +51,22 @@ Parser `html` (opcao oficial do Code Connect para Vue), CLI pinado em
 
 - Plano Figma com Dev Mode (Organization/Enterprise) e permissao de editor no arquivo.
 - Clone em caminho sem colchetes (limitacao de glob do CLI).
+
+## Design tokens
+
+As collections priorizadas da biblioteca de foundations no Figma sao espelhadas em
+`tokens/*.json` e compiladas para `src/tokens/`:
+
+| Collection no Figma | Arquivo | Modos | Tokens |
+|---|---|---|---|
+| `Primitive` | `tokens/primitives.json` | value | 149 |
+| `❖ Color` | `tokens/colors.json` | light, dark | 310 |
+| `Typography` | `tokens/typography.json` | value | 39 |
+| `Spacing` | `tokens/spacing.json` | value | 40 |
+| `Layout` | `tokens/layout.json` | desktop, tablet, mobile | 24 |
+
+`Primitive` e a base: as outras collections referenciam seus valores por alias.
+Quando houver conflito com qualquer outra collection do arquivo, estas cinco vencem.
+
+Para atualizar apos mudanca no Figma: re-sincronizar o SSOT de tokens e rodar
+`npm run tokens:build -- <dir-do-ssot>`, conferindo o diff de `src/tokens/`.

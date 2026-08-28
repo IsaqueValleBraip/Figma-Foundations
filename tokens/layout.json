@@ -1,0 +1,244 @@
+{
+  "_meta": {
+    "$version": "2",
+    "$figmaCollection": "Layout",
+    "$collectionId": "VariableCollectionId:1055:2938",
+    "$modes": [
+      {
+        "name": "Desktop",
+        "key": "desktop"
+      },
+      {
+        "name": "Tablet",
+        "key": "tablet"
+      },
+      {
+        "name": "Mobile",
+        "key": "mobile"
+      }
+    ],
+    "$aliasTargets": [
+      "tokens/primitives.json"
+    ]
+  },
+  "breakpoint": {
+    "max": {
+      "$type": "dimension",
+      "$value": {
+        "desktop": 2048,
+        "mobile": 743,
+        "tablet": 1439
+      }
+    },
+    "min": {
+      "$type": "dimension",
+      "$value": {
+        "desktop": 1440,
+        "mobile": 320,
+        "tablet": 744
+      }
+    }
+  },
+  "font": {
+    "line-height": {
+      "display": {
+        "$type": "dimension",
+        "$value": {
+          "desktop": 100.80000305175781,
+          "mobile": 78.4000015258789,
+          "tablet": 78.4000015258789
+        },
+        "$description": "Number of grid columns. Adapts: 12 (desktop) → 8 (tablet) → 4 (mobile). Aligns with Bootstrap/Material 12-col standard."
+      },
+      "h1": {
+        "$type": "dimension",
+        "$value": {
+          "desktop": 89.5999984741211,
+          "mobile": 67.19999694824219,
+          "tablet": 67.19999694824219
+        },
+        "$description": "Gap between grid columns (px). Scales down on smaller viewports for tighter layouts."
+      },
+      "h2": {
+        "$type": "dimension",
+        "$value": {
+          "desktop": 78.4000015258789,
+          "mobile": 56,
+          "tablet": 56
+        },
+        "$description": "Horizontal outer margin of the grid container (px). Provides breathing room between content and screen edges."
+      },
+      "h3": {
+        "$type": "dimension",
+        "$value": {
+          "desktop": 67.19999694824219,
+          "mobile": 50.400001525878906,
+          "tablet": 50.400001525878906
+        },
+        "$description": "Horizontal outer margin of the grid container (px). Provides breathing room between content and screen edges."
+      },
+      "h4": {
+        "$type": "dimension",
+        "$value": {
+          "desktop": 56,
+          "mobile": 44.79999923706055,
+          "tablet": 44.79999923706055
+        },
+        "$description": "Minimum viewport width for this breakpoint (px). Matches the mode breakpoint start value."
+      },
+      "h5": {
+        "$type": "dimension",
+        "$value": {
+          "desktop": 50.400001525878906,
+          "mobile": 39.20000076293945,
+          "tablet": 39.20000076293945
+        },
+        "$description": "Maximum width of the content container (px). Prevents overly wide lines on large screens. Mirrors Bootstrap container max-widths."
+      },
+      "h6": {
+        "$type": "dimension",
+        "$value": {
+          "desktop": 44.79999923706055,
+          "mobile": 33.599998474121094,
+          "tablet": 33.599998474121094
+        },
+        "$description": "Fixed 864px container. Use for narrow content like forms, modals, and focused reading layouts."
+      },
+      "h7": {
+        "$type": "dimension",
+        "$value": {
+          "desktop": 33.599998474121094,
+          "mobile": 25.200000762939453,
+          "tablet": 25.200000762939453
+        },
+        "$description": "Fixed 1296px container. Use for wide content like hero sections and dashboards."
+      },
+      "h8": {
+        "$type": "dimension",
+        "$value": {
+          "desktop": 25.200000762939453,
+          "mobile": 19.600000381469727,
+          "tablet": 19.600000381469727
+        },
+        "$description": "Fixed 1296px container. Use for wide content like hero sections and dashboards."
+      }
+    },
+    "size": {
+      "display": {
+        "$type": "dimension",
+        "$value": {
+          "desktop": 72,
+          "mobile": 56,
+          "tablet": 56
+        },
+        "$description": "Number of grid columns. Adapts: 12 (desktop) → 8 (tablet) → 4 (mobile). Aligns with Bootstrap/Material 12-col standard."
+      },
+      "h1": {
+        "$type": "dimension",
+        "$value": {
+          "desktop": 64,
+          "mobile": 48,
+          "tablet": 48
+        },
+        "$description": "Gap between grid columns (px). Scales down on smaller viewports for tighter layouts."
+      },
+      "h2": {
+        "$type": "dimension",
+        "$value": {
+          "desktop": 56,
+          "mobile": 40,
+          "tablet": 40
+        },
+        "$description": "Horizontal outer margin of the grid container (px). Provides breathing room between content and screen edges."
+      },
+      "h3": {
+        "$type": "dimension",
+        "$value": {
+          "desktop": 48,
+          "mobile": 36,
+          "tablet": 40
+        },
+        "$description": "Horizontal outer margin of the grid container (px). Provides breathing room between content and screen edges."
+      },
+      "h4": {
+        "$type": "dimension",
+        "$value": {
+          "desktop": 40,
+          "mobile": 32,
+          "tablet": 36
+        },
+        "$description": "Minimum viewport width for this breakpoint (px). Matches the mode breakpoint start value."
+      },
+      "h5": {
+        "$type": "dimension",
+        "$value": {
+          "desktop": 36,
+          "mobile": 28,
+          "tablet": 28
+        },
+        "$description": "Maximum width of the content container (px). Prevents overly wide lines on large screens. Mirrors Bootstrap container max-widths."
+      },
+      "h6": {
+        "$type": "dimension",
+        "$value": {
+          "desktop": 32,
+          "mobile": 24,
+          "tablet": 24
+        },
+        "$description": "Fixed 864px container. Use for narrow content like forms, modals, and focused reading layouts."
+      },
+      "h7": {
+        "$type": "dimension",
+        "$value": {
+          "desktop": 24,
+          "mobile": 18,
+          "tablet": 18
+        },
+        "$description": "Fixed 1296px container. Use for wide content like hero sections and dashboards."
+      },
+      "h8": {
+        "$type": "dimension",
+        "$value": {
+          "desktop": 18,
+          "mobile": 14,
+          "tablet": 14
+        },
+        "$description": "Fixed 1296px container. Use for wide content like hero sections and dashboards."
+      }
+    }
+  },
+  "grid": {
+    "device": {
+      "$type": "dimension",
+      "$value": {
+        "desktop": 1440,
+        "mobile": 390,
+        "tablet": 744
+      }
+    },
+    "gap": {
+      "$type": "dimension",
+      "$value": {
+        "desktop": "{value/space/32}",
+        "mobile": "{value/space/16}",
+        "tablet": "{value/space/24}"
+      }
+    },
+    "margin": {
+      "$type": "dimension",
+      "$value": {
+        "desktop": "{value/space/112}",
+        "mobile": "{value/space/16}",
+        "tablet": "{value/space/32}"
+      }
+    },
+    "padding": {
+      "$type": "dimension",
+      "$value": {
+        "desktop": "{value/space/48}",
+        "mobile": "{value/space/32}",
+        "tablet": "{value/space/40}"
+      }
+    }
+  }
+}
