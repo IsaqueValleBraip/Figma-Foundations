@@ -1,0 +1,6 @@
+/* Gerado por scripts/tokens/build.mjs a partir de colors/.
+ * Nao editar a mao — rode `npm run tokens:build`. */
+
+@import './main.css';
+@import './light.css';
+@import './dark.css';

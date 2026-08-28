@@ -1,0 +1,7 @@
+/* Gerado por scripts/tokens/build.mjs a partir de src/foundations.
+ * Nao editar a mao — rode `npm run tokens:build`. */
+
+@import './colors/index.css';
+@import './sizes/sizes.css';
+@import './typography/typography.css';
+@import './layout/layout.css';

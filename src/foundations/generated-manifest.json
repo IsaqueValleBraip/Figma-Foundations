@@ -1,0 +1,92 @@
+{
+  "generatedFrom": "src/foundations/source/*.tokens.json",
+  "figmaFile": "Braip Foundations",
+  "collections": [
+    {
+      "figma": "Primitive",
+      "source": "source/primitives.tokens.json",
+      "modes": [
+        "value"
+      ],
+      "tokens": 149
+    },
+    {
+      "figma": "❖ Color",
+      "source": "source/colors.tokens.json",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "tokens": 317
+    },
+    {
+      "figma": "Typography",
+      "source": "source/typography.tokens.json",
+      "modes": [
+        "value"
+      ],
+      "tokens": 39
+    },
+    {
+      "figma": "Spacing",
+      "source": "source/spacing.tokens.json",
+      "modes": [
+        "value"
+      ],
+      "tokens": 40
+    },
+    {
+      "figma": "Layout",
+      "source": "source/layout.tokens.json",
+      "modes": [
+        "desktop",
+        "tablet",
+        "mobile"
+      ],
+      "tokens": 25
+    },
+    {
+      "figma": "↳ Aliases",
+      "source": "source/aliases.tokens.json",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "tokens": 81
+    }
+  ],
+  "declarations": 1089,
+  "responsiveOverrides": {
+    "tablet": 24,
+    "mobile": 24
+  },
+  "waived": 10,
+  "outputs": [
+    "colors/dark.css",
+    "colors/dark.ts",
+    "colors/index.css",
+    "colors/index.ts",
+    "colors/light.css",
+    "colors/light.ts",
+    "colors/main.css",
+    "colors/main.ts",
+    "index.css",
+    "index.ts",
+    "layout/breakpoints.ts",
+    "layout/font.ts",
+    "layout/grid.ts",
+    "layout/index.ts",
+    "layout/layout.css",
+    "sizes/index.ts",
+    "sizes/primitives.ts",
+    "sizes/radius.ts",
+    "sizes/sizes.css",
+    "sizes/spacing.ts",
+    "typography/font-family.ts",
+    "typography/index.ts",
+    "typography/line-height.ts",
+    "typography/size.ts",
+    "typography/typography.css",
+    "typography/weight.ts"
+  ]
+}

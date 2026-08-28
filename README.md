@@ -1,25 +1,27 @@
-# Figma Foundations — Code Connect (Vue)
+# Figma Foundations
 
-Ponte entre a biblioteca de componentes no Figma e os componentes Vue, via
-[Figma Code Connect](https://developers.figma.com/docs/code-connect/).
+Ponte entre a biblioteca de foundations e componentes no Figma e o codigo Vue, via
+tokens gerados e [Figma Code Connect](https://developers.figma.com/docs/code-connect/).
 
-- CLI: `@figma/code-connect@1` — parser `html`, label `Vue`
-  (a v2 removeu os parsers de framework; para Vue a v1 e o caminho suportado)
-- Design tokens: mirror versionado das collections priorizadas da biblioteca de
-  foundations no Figma — `Primitive`, `Typography`, `Spacing`, `Layout`, `Color` e `Aliases`.
+- **Tokens** — 651 tokens em seis collections, espelhados e compilados para TS e CSS
+- **Code Connect** — `@figma/code-connect@1`, parser `html`, label `Vue`
+- **Playground** — Vite, para ver componentes e foundations rodando
+
+O Figma e a fonte de verdade; `src/foundations/source/` e o espelho versionado; tudo
+em `src/foundations/**` e derivado. Detalhes em [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ## Requisito de caminho
 
-O CLI do Code Connect faz glob sobre o caminho absoluto do projeto e **nao encontra
-nenhum arquivo quando o caminho contem colchetes** (`[...]`) — falha silenciosa,
-`parse` retorna vazio. Manter o clone em um caminho sem colchetes.
+O CLI do Code Connect faz glob sobre o caminho absoluto e **nao encontra nenhum
+arquivo quando o caminho contem colchetes** (`[...]`) — falha silenciosa. Manter o
+clone em um caminho sem colchetes.
 
 ## Setup
 
 ```bash
 npm install
-cp .env.example .env                       # preencher token e file key
-cp figma.config.example.json figma.config.json   # preencher a URL da biblioteca
+cp .env.example .env                              # token e file key
+cp figma.config.example.json figma.config.json    # URL da biblioteca
 ```
 
 `.env` e `figma.config.json` sao locais e ignorados pelo git.
@@ -28,43 +30,42 @@ cp figma.config.example.json figma.config.json   # preencher a URL da biblioteca
 
 | Comando | O que faz |
 |---|---|
-| `npm run dev` | Sobe o playground Vite em `localhost:5175` para preview local dos componentes |
-| `npm run build` / `npm run preview` | Build e preview estatico do playground |
-| `npm run tokens:build -- <dir-do-ssot>` | Regenera `tokens/*.json`, `src/tokens/tokens.css` e `src/tokens/index.ts` |
-| `npm run figma:list` | Baixa os componentes publicados -> `docs/figma-components.json` (script e saida sao locais, fora do git) |
-| `npm run cc:create -- "<url-do-node>" --outDir src/components` | Gera o boilerplate de conexao |
-| `npm run cc:parse` | Valida os arquivos localmente |
-| `npm run cc:publish -- --dry-run` | Testa a publicacao sem gravar |
-| `npm run cc:publish` | Publica no Figma (aparece no Dev Mode) |
-| `npm run cc:unpublish -- --file <arquivo>` | Remove a conexao |
+| `npm run dev` | Playground em `localhost:5175` |
+| `npm run build` / `npm run preview` | Build e preview estatico |
+| `npm run tokens:build` | Regenera `src/foundations/**` e `docs/foundations/**` |
+| `npm run tokens:validate` | Schema, referencias, ciclos, modos e paridade |
+| `npm run check` | tokens:build + tokens:validate + cc:parse + build |
+| `npm run figma:list` | Lista componentes publicados (saida local) |
+| `npm run cc:create -- "<url-node>" --outDir src/components` | Boilerplate de conexao |
+| `npm run cc:parse` | Valida os arquivos de Code Connect |
+| `npm run cc:publish -- --dry-run` | Testa a publicacao |
+| `npm run cc:publish` | Publica no Dev Mode |
 
-## Design tokens
-
-651 tokens nas collections priorizadas, consumiveis de duas formas:
+## Uso
 
 ```ts
-import { color, spacing, typography, layout, primitive, alias } from './tokens'
+import { color, alias, spacing, typography, layout, primitive, responsive } from '@/foundations'
 ```
 
 ```css
-@import './tokens/tokens.css';   /* variaveis --braip-* */
+@import './foundations/index.css';
 ```
 
-- `:root` carrega Primitive, Typography, Spacing, o modo `light` de Color e o modo
-  `desktop` de Layout.
-- `[data-theme="dark"]` sobrescreve as cores e os aliases; media queries sobrescrevem Layout nos
-  breakpoints de tablet e mobile.
-- `Primitive` alimenta as demais collections: referencias como `{colors/neutral/light/0}`
-  sao resolvidas em tempo de build ate o valor final.
-- A collection `Aliases` e a camada semantica: cada token aponta para um token de
-  `Color` (ou para outro alias). O build segue a cadeia inteira e emite o valor
-  literal, entao `--braip-alias-*` ja sai como cor resolvida em cada modo.
-- Arquivos gerados — nao editar a mao. A fonte e o Figma; o gerador vive em `scripts/`
-  (local) e le o mirror do SSOT de tokens.
+| Escopo | Conteudo |
+|---|---|
+| `:root` | Primitive, Color light, Alias light, Typography, Spacing, Layout desktop |
+| `[data-theme="dark"]` | sobrescritas de Color e Alias |
+| `@media (max-width: 1439px)` | Layout tablet + tokens responsivos |
+| `@media (max-width: 743px)` | Layout mobile + tokens responsivos |
+
+Prefixo publico `--braip-*`. `src/tokens/` segue funcionando como reexport de
+compatibilidade.
 
 ## Estado
 
-Nenhum componente conectado ainda. Os arquivos `src/components/*.figma.ts.template`
-sao exemplos desligados — renomear removendo `.template` para entrar no publish.
-
-Detalhes do fluxo: [`docs/CODE-CONNECT.md`](docs/CODE-CONNECT.md).
+- Nenhum componente conectado. Os `*.figma.ts.template` sao exemplos desligados —
+  com zero conexoes ativas, `cc:parse` passa validando nada.
+- Dez pendencias de referencia documentadas em `src/foundations/known-issues.json`,
+  todas com origem no arquivo do Figma. Ver
+  [docs/workflows/token-sync.md](docs/workflows/token-sync.md).
+- Binarios de fonte nao versionados — ver [docs/fonts/README.md](docs/fonts/README.md).

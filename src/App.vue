@@ -1,15 +1,16 @@
 <script setup lang="ts">
 import Button from './components/Button.vue'
-import { color, spacing, typography } from './tokens'
+import { alias, spacing, typography, responsive, theme } from './foundations'
 
 const variants = ['primary', 'secondary', 'ghost'] as const
 const sizes = ['sm', 'md', 'lg'] as const
+const brandSwatches = Object.entries(theme.light.color.brand.core.surface)
 </script>
 
 <template>
   <main class="playground">
     <h1>Figma Foundations — playground</h1>
-    <p>Preview local dos componentes conectados ao Figma via Code Connect.</p>
+    <p>Preview local dos componentes e das foundations geradas a partir do Figma.</p>
 
     <section v-for="variant in variants" :key="variant">
       <h2>{{ variant }}</h2>
@@ -21,31 +22,76 @@ const sizes = ['sm', 'md', 'lg'] as const
       </div>
     </section>
 
-    <h2>Design tokens</h2>
+    <h2>Foundations</h2>
     <div class="row">
       <span
-        v-for="(hex, name) in color.light.brand.primary"
+        v-for="[name, hex] in brandSwatches"
         :key="name"
         class="swatch"
-        :title="`${name}: ${hex}`"
+        :title="`brand.core.surface.${name}: ${hex}`"
         :style="{ background: hex }"
       />
     </div>
     <p class="hint">
+      {{ Object.keys(alias.light).length }} grupos de alias ·
       {{ Object.keys(spacing.base).length }} tokens de spacing base ·
-      {{ Object.keys(typography.size).length }} tamanhos de tipografia ·
-      variaveis CSS disponiveis como <code>--braip-*</code>
+      {{ Object.keys(typography.size).length }} escalas de tipografia ·
+      {{ Object.keys(responsive.tablet).length }} dominios com sobrescrita responsiva
     </p>
   </main>
 </template>
 
 <style>
-body { margin: 0; font-family: system-ui, sans-serif; }
-.playground { max-width: 60rem; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
-.playground h1 { font-size: 1.5rem; margin: 0 0 .25rem; }
-.playground p { margin: 0 0 2rem; color: #666; }
-.playground h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; color: #888; margin: 2rem 0 .75rem; }
-.swatch { width: 2.5rem; height: 2.5rem; border-radius: 6px; border: 1px solid rgba(0,0,0,.1); }
-.hint { margin-top: 1rem; font-size: .8125rem; color: #888; }
-.row { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
+body {
+  margin: 0;
+  font-family: var(--braip-font-stack-text);
+  background: var(--braip-alias-bg-primary);
+  color: var(--braip-alias-text-primary);
+}
+
+.playground {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: var(--braip-space-base-lg) var(--braip-space-base-md) var(--braip-space-macro-md);
+}
+
+.playground h1 {
+  font-family: var(--braip-font-stack-title);
+  font-size: var(--braip-type-size-title-h5);
+  line-height: var(--braip-type-line-height-title-h5);
+  margin: 0 0 var(--braip-space-base-xxs);
+}
+
+.playground p {
+  margin: 0 0 var(--braip-space-base-md);
+  color: var(--braip-alias-text-secondary);
+}
+
+.playground h2 {
+  font-size: var(--braip-type-size-text-p7);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--braip-alias-text-tertiary);
+  margin: var(--braip-space-base-md) 0 var(--braip-space-base-xs);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--braip-space-base-xs);
+  align-items: center;
+}
+
+.swatch {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--braip-space-radius-sm);
+  border: 1px solid var(--braip-alias-stroke-tertiary);
+}
+
+.hint {
+  margin-top: var(--braip-space-base-sm);
+  font-size: var(--braip-type-size-text-p7);
+  color: var(--braip-alias-text-tertiary);
+}
 </style>

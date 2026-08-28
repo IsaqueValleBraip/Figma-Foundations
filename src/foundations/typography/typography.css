@@ -1,0 +1,44 @@
+/* Gerado por scripts/tokens/build.mjs a partir de source/typography.tokens.json.
+ * Nao editar a mao — rode `npm run tokens:build`. */
+
+:root {
+  --braip-type-font-family-text: Poppins;
+  --braip-type-font-family-title: Sora;
+  --braip-type-line-height-text-p1: 33.6px;
+  --braip-type-line-height-text-p2: 28px;
+  --braip-type-line-height-text-p3: 28.8px;
+  --braip-type-line-height-text-p4: 25.6px;
+  --braip-type-line-height-text-p5: 22.4px;
+  --braip-type-line-height-text-p6: 19.2px;
+  --braip-type-line-height-text-p7: 17.6px;
+  --braip-type-line-height-title-display: 100.8px;
+  --braip-type-line-height-title-h1: 89.6px;
+  --braip-type-line-height-title-h2: 78.4px;
+  --braip-type-line-height-title-h3: 67.2px;
+  --braip-type-line-height-title-h4: 56px;
+  --braip-type-line-height-title-h5: 50.4px;
+  --braip-type-line-height-title-h6: 44.8px;
+  --braip-type-line-height-title-h7: 33.6px;
+  --braip-type-line-height-title-h8: 25.2px;
+  --braip-type-size-text-p1: 24px;
+  --braip-type-size-text-p2: 20px;
+  --braip-type-size-text-p3: 18px;
+  --braip-type-size-text-p4: 16px;
+  --braip-type-size-text-p5: 14px;
+  --braip-type-size-text-p6: 12px;
+  --braip-type-size-text-p7: 11px;
+  --braip-type-size-title-display: 72px;
+  --braip-type-size-title-h1: 64px;
+  --braip-type-size-title-h2: 56px;
+  --braip-type-size-title-h3: 48px;
+  --braip-type-size-title-h4: 40px;
+  --braip-type-size-title-h5: 36px;
+  --braip-type-size-title-h6: 32px;
+  --braip-type-size-title-h7: 24px;
+  --braip-type-size-title-h8: 18px;
+  --braip-type-weight-bold: 700;
+  --braip-type-weight-extra-bold: 800;
+  --braip-type-weight-medium: 500;
+  --braip-type-weight-regular: 400;
+  --braip-type-weight-semi-bold: 600;
+}

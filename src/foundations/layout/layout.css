@@ -1,0 +1,139 @@
+/* Gerado por scripts/tokens/build.mjs a partir de source/layout.tokens.json.
+ * Nao editar a mao — rode `npm run tokens:build`. */
+
+
+:root {
+  --braip-layout-breakpoint-max: 2048px;
+  --braip-layout-breakpoint-min: 1440px;
+  --braip-layout-font-line-height-display: 100.8px;
+  --braip-layout-font-line-height-h1: 89.6px;
+  --braip-layout-font-line-height-h2: 78.4px;
+  --braip-layout-font-line-height-h3: 67.2px;
+  --braip-layout-font-line-height-h4: 56px;
+  --braip-layout-font-line-height-h5: 50.4px;
+  --braip-layout-font-line-height-h6: 44.8px;
+  --braip-layout-font-line-height-h7: 33.6px;
+  --braip-layout-font-line-height-h8: 25.2px;
+  --braip-layout-font-size-display: 72px;
+  --braip-layout-font-size-h1: 64px;
+  --braip-layout-font-size-h2: 56px;
+  --braip-layout-font-size-h3: 48px;
+  --braip-layout-font-size-h4: 40px;
+  --braip-layout-font-size-h5: 36px;
+  --braip-layout-font-size-h6: 32px;
+  --braip-layout-font-size-h7: 24px;
+  --braip-layout-font-size-h8: 18px;
+  --braip-layout-grid-content-width: 1208px;
+  --braip-layout-grid-device: 1440px;
+  --braip-layout-grid-gap: 32px;
+  --braip-layout-grid-margin: 112px;
+  --braip-layout-grid-padding: 48px;
+}
+
+@media (max-width: 1439px) {
+  :root {
+    --braip-layout-breakpoint-max: 1439px;
+    --braip-layout-breakpoint-min: 744px;
+    --braip-layout-font-line-height-display: 78.4px;
+    --braip-layout-font-line-height-h1: 67.2px;
+    --braip-layout-font-line-height-h2: 56px;
+    --braip-layout-font-line-height-h3: 50.4px;
+    --braip-layout-font-line-height-h4: 44.8px;
+    --braip-layout-font-line-height-h5: 39.2px;
+    --braip-layout-font-line-height-h6: 33.6px;
+    --braip-layout-font-line-height-h7: 25.2px;
+    --braip-layout-font-line-height-h8: 19.6px;
+    --braip-layout-font-size-display: 56px;
+    --braip-layout-font-size-h1: 48px;
+    --braip-layout-font-size-h2: 40px;
+    --braip-layout-font-size-h3: 40px;
+    --braip-layout-font-size-h4: 36px;
+    --braip-layout-font-size-h5: 28px;
+    --braip-layout-font-size-h6: 24px;
+    --braip-layout-font-size-h7: 18px;
+    --braip-layout-font-size-h8: 14px;
+    --braip-layout-grid-content-width: 680px;
+    --braip-layout-grid-device: 744px;
+    --braip-layout-grid-gap: 24px;
+    --braip-layout-grid-margin: 32px;
+    --braip-layout-grid-padding: 40px;
+    --braip-space-responsive-device: 744px;
+    --braip-space-responsive-gap: 24px;
+    --braip-space-responsive-margin: 32px;
+    --braip-space-responsive-max: 1439px;
+    --braip-space-responsive-min: 744px;
+    --braip-space-responsive-padding: 40px;
+    --braip-type-line-height-title-display: 78.4px;
+    --braip-type-line-height-title-h1: 67.2px;
+    --braip-type-line-height-title-h2: 56px;
+    --braip-type-line-height-title-h3: 50.4px;
+    --braip-type-line-height-title-h4: 44.8px;
+    --braip-type-line-height-title-h5: 39.2px;
+    --braip-type-line-height-title-h6: 33.6px;
+    --braip-type-line-height-title-h7: 25.2px;
+    --braip-type-line-height-title-h8: 19.6px;
+    --braip-type-size-title-display: 56px;
+    --braip-type-size-title-h1: 48px;
+    --braip-type-size-title-h2: 40px;
+    --braip-type-size-title-h3: 40px;
+    --braip-type-size-title-h4: 36px;
+    --braip-type-size-title-h5: 28px;
+    --braip-type-size-title-h6: 24px;
+    --braip-type-size-title-h7: 18px;
+    --braip-type-size-title-h8: 14px;
+}
+}
+
+@media (max-width: 743px) {
+  :root {
+    --braip-layout-breakpoint-max: 743px;
+    --braip-layout-breakpoint-min: 320px;
+    --braip-layout-font-line-height-display: 78.4px;
+    --braip-layout-font-line-height-h1: 67.2px;
+    --braip-layout-font-line-height-h2: 56px;
+    --braip-layout-font-line-height-h3: 50.4px;
+    --braip-layout-font-line-height-h4: 44.8px;
+    --braip-layout-font-line-height-h5: 39.2px;
+    --braip-layout-font-line-height-h6: 33.6px;
+    --braip-layout-font-line-height-h7: 25.2px;
+    --braip-layout-font-line-height-h8: 19.6px;
+    --braip-layout-font-size-display: 56px;
+    --braip-layout-font-size-h1: 48px;
+    --braip-layout-font-size-h2: 40px;
+    --braip-layout-font-size-h3: 36px;
+    --braip-layout-font-size-h4: 32px;
+    --braip-layout-font-size-h5: 28px;
+    --braip-layout-font-size-h6: 24px;
+    --braip-layout-font-size-h7: 18px;
+    --braip-layout-font-size-h8: 14px;
+    --braip-layout-grid-content-width: 358px;
+    --braip-layout-grid-device: 390px;
+    --braip-layout-grid-gap: 16px;
+    --braip-layout-grid-margin: 16px;
+    --braip-layout-grid-padding: 32px;
+    --braip-space-responsive-device: 390px;
+    --braip-space-responsive-gap: 16px;
+    --braip-space-responsive-margin: 16px;
+    --braip-space-responsive-max: 743px;
+    --braip-space-responsive-min: 320px;
+    --braip-space-responsive-padding: 32px;
+    --braip-type-line-height-title-display: 78.4px;
+    --braip-type-line-height-title-h1: 67.2px;
+    --braip-type-line-height-title-h2: 56px;
+    --braip-type-line-height-title-h3: 50.4px;
+    --braip-type-line-height-title-h4: 44.8px;
+    --braip-type-line-height-title-h5: 39.2px;
+    --braip-type-line-height-title-h6: 33.6px;
+    --braip-type-line-height-title-h7: 25.2px;
+    --braip-type-line-height-title-h8: 19.6px;
+    --braip-type-size-title-display: 56px;
+    --braip-type-size-title-h1: 48px;
+    --braip-type-size-title-h2: 40px;
+    --braip-type-size-title-h3: 36px;
+    --braip-type-size-title-h4: 32px;
+    --braip-type-size-title-h5: 28px;
+    --braip-type-size-title-h6: 24px;
+    --braip-type-size-title-h7: 18px;
+    --braip-type-size-title-h8: 14px;
+}
+}

@@ -1,0 +1,17 @@
+{
+  "$comment": "Pendencias conhecidas no arquivo do Figma. Cada entrada suprime UMA falha de build especifica. O build falha em qualquer referencia quebrada que nao esteja listada aqui — a lista nunca deve crescer sem uma causa registrada. Remover a entrada assim que a origem for religada no Figma.",
+  "cause": "Aliases apontando para bibliotecas nao assinadas: a variavel de origem foi desvinculada no Figma e a referencia ficou pendurada. Correcao e no arquivo do Figma (religar a biblioteca ou reapontar o token), nao no pipeline.",
+  "reportedAt": "2026-08-28",
+  "waived": [
+    { "id": "colors:aux/pink/states/primary[light]", "ref": "VariableID:78fccff019eaa8aaf5e091830096aa94ae79a175/1018:378", "kind": "cross-library" },
+    { "id": "colors:aux/pink/states/secundary[light]", "ref": "VariableID:86740c33d3c8ff9fef11fcaa45f362e90d3a1a74/1018:342", "kind": "cross-library" },
+    { "id": "colors:global/surfaces/bg/aside[dark]", "ref": "VariableID:95cd030d9da6a54d1e2bd10ff58d00f3c720aefc/10:727", "kind": "cross-library" },
+    { "id": "colors:global/surfaces/bg/primary[dark]", "ref": "VariableID:95cd030d9da6a54d1e2bd10ff58d00f3c720aefc/10:727", "kind": "cross-library" },
+    { "id": "colors:global/surfaces/bg/secondary[dark]", "ref": "VariableID:f33819846fecf99e17a7a4ca6a3cbb567ff47cfa/10:669", "kind": "cross-library" },
+    { "id": "colors:global/surfaces/bg/tertiary[dark]", "ref": "VariableID:82f3963c7dce7c137e2942513bb50d4936cc9faf/10:664", "kind": "cross-library" },
+    { "id": "aliases:bg/surface-aside[dark]", "ref": "colors:global/surfaces/bg/aside[dark]", "kind": "dependente" },
+    { "id": "aliases:bg/surface-primary[dark]", "ref": "colors:global/surfaces/bg/primary[dark]", "kind": "dependente" },
+    { "id": "aliases:bg/surface-secondary[dark]", "ref": "colors:global/surfaces/bg/secondary[dark]", "kind": "dependente" },
+    { "id": "aliases:bg/surface-tertiary[dark]", "ref": "colors:global/surfaces/bg/tertiary[dark]", "kind": "dependente" }
+  ]
+}
