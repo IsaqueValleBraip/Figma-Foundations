@@ -1,0 +1,18 @@
+{
+  "codeConnect": {
+    "include": [
+      "src/**/*.figma.ts"
+    ],
+    "exclude": [
+      "node_modules/**",
+      "dist/**"
+    ],
+    "importPaths": {
+      "src/components/*": "@braip/foundations"
+    },
+    "documentUrlSubstitutions": {
+      "<FIGMA_LIBRARY>": "https://www.figma.com/design/FILE_KEY_AQUI"
+    },
+    "parser": "html"
+  }
+}

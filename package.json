@@ -1,0 +1,19 @@
+{
+  "name": "braip-figma-foundations",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Code Connect (Vue) entre Braip Components no Figma e o codigo",
+  "scripts": {
+    "cc:publish": "figma connect publish",
+    "cc:unpublish": "figma connect unpublish",
+    "cc:create": "figma connect create",
+    "cc:parse": "figma connect parse",
+    "figma:list": "node scripts/list-components.mjs"
+  },
+  "devDependencies": {
+    "@figma/code-connect": "^1.5.3",
+    "typescript": "^7.0.2",
+    "vue": "^3.5.42"
+  }
+}

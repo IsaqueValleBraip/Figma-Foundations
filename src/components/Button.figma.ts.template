@@ -1,0 +1,22 @@
+// TEMPLATE — copie para Button.figma.ts e troque a URL pelo node do Figma.
+// Extensao .template mantem fora do include ate estar pronto para publicar.
+import figma, { html } from '@figma/code-connect/html'
+
+figma.connect('<FIGMA_LIBRARY>?node-id=0-0', {
+  props: {
+    // nomes a esquerda = props do codigo; strings = nomes das props no Figma
+    variant: figma.enum('Variant', {
+      Primary: 'primary',
+      Secondary: 'secondary',
+      Ghost: 'ghost',
+    }),
+    size: figma.enum('Size', { Small: 'sm', Medium: 'md', Large: 'lg' }),
+    disabled: figma.enum('State', { Disabled: true }),
+    label: figma.string('Label'),
+  },
+  example: (props) => html`
+    <BraipButton variant="${props.variant}" size="${props.size}" :disabled="${props.disabled}">
+      ${props.label}
+    </BraipButton>
+  `,
+})
