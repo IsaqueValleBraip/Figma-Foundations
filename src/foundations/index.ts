@@ -5,6 +5,7 @@ export * from './colors'
 export * from './sizes'
 export * from './typography'
 export * from './layout'
+export * from './motion'
 
 /* API publica estavel — nomes e formatos preservados desde a primeira versao. */
 export const primitive = {
@@ -1637,6 +1638,30 @@ export const layout = {
       "margin": "16px",
       "padding": "32px"
     }
+  }
+} as const
+
+export const motion = {
+  "value": {
+    "duration": {
+      "100": "100ms",
+      "150": "150ms",
+      "250": "250ms",
+      "400": "400ms",
+      "600": "600ms"
+    }
+  },
+  "easing": {
+    "standard": "cubic-bezier(0.2, 0, 0, 1)",
+    "enter": "cubic-bezier(0.05, 0.7, 0.1, 1)",
+    "exit": "cubic-bezier(0.3, 0, 0.8, 0.15)"
+  },
+  "duration": {
+    "instant": "100ms",
+    "fast": "150ms",
+    "base": "250ms",
+    "slow": "400ms",
+    "slower": "600ms"
   }
 } as const
 

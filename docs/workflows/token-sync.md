@@ -47,6 +47,17 @@ continua no mesmo formato de antes, so a origem passa a ser rastreavel.
 tokens precisam ser extraidos do Bridge via `figma_execute`, lendo
 `valuesByMode` e resolvendo `expressionArguments`.
 
+## 2c. Motion
+
+A collection `Motion` traz dois tipos que nenhum outro dominio usava:
+
+- `$type: "duration"` — numero em ms; sai como `250ms`, nao `250px`
+- `$type: "cubicBezier"` — o Figma guarda os quatro argumentos crus numa string
+  (`"0.2, 0, 0, 1"`); o build embrulha em `cubic-bezier(...)`
+
+Os cinco `duration/*` semanticos aliasam a escala crua em `value/duration/*` — a mesma
+separacao entre primitivo e semantico dos outros dominios.
+
 ## 3. Regenerar e validar
 
 ```bash

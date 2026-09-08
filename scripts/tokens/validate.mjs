@@ -58,7 +58,7 @@ for (const id of waived)
 if (!exists('src/foundations/index.css')) fail('paridade', 'src/foundations/index.css ausente — rode npm run tokens:build')
 else {
   const cssFiles = ['colors/main.css', 'colors/light.css', 'colors/dark.css', 'sizes/sizes.css',
-    'typography/typography.css', 'layout/layout.css']
+    'typography/typography.css', 'layout/layout.css', 'motion/motion.css']
   const emitted = new Set()
   for (const file of cssFiles)
     for (const match of read(`src/foundations/${file}`).matchAll(/(--braip-[a-z0-9-]+)\s*:/g)) emitted.add(match[1])

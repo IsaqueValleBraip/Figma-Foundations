@@ -1,0 +1,82 @@
+{
+  "_meta": {
+    "$version": "2",
+    "$figmaCollection": "Motion",
+    "$collectionId": "VariableCollectionId:1488:17960",
+    "$modes": [
+      {
+        "name": "Mode 1",
+        "key": "value"
+      }
+    ],
+    "$aliasTargets": []
+  },
+  "value": {
+    "duration": {
+      "100": {
+        "$type": "duration",
+        "$value": 100
+      },
+      "150": {
+        "$type": "duration",
+        "$value": 150
+      },
+      "250": {
+        "$type": "duration",
+        "$value": 250
+      },
+      "400": {
+        "$type": "duration",
+        "$value": 400
+      },
+      "600": {
+        "$type": "duration",
+        "$value": 600
+      }
+    }
+  },
+  "easing": {
+    "standard": {
+      "$type": "cubicBezier",
+      "$value": "0.2, 0, 0, 1",
+      "$description": "Movimento continuo (drag, resize)"
+    },
+    "enter": {
+      "$type": "cubicBezier",
+      "$value": "0.05, 0.7, 0.1, 1",
+      "$description": "Elementos entrando (sheet abrindo, toast surgindo)"
+    },
+    "exit": {
+      "$type": "cubicBezier",
+      "$value": "0.3, 0, 0.8, 0.15",
+      "$description": "Elementos saindo (sheet fechando, dismiss)"
+    }
+  },
+  "duration": {
+    "instant": {
+      "$type": "duration",
+      "$value": "{value/duration/100}",
+      "$description": "Feedback imediato (ripple, check)"
+    },
+    "fast": {
+      "$type": "duration",
+      "$value": "{value/duration/150}",
+      "$description": "Hover, foco, toggle"
+    },
+    "base": {
+      "$type": "duration",
+      "$value": "{value/duration/250}",
+      "$description": "Padrao — abrir/fechar sheet, dropdown"
+    },
+    "slow": {
+      "$type": "duration",
+      "$value": "{value/duration/400}",
+      "$description": "Toast, modal, transicoes de pagina"
+    },
+    "slower": {
+      "$type": "duration",
+      "$value": "{value/duration/600}",
+      "$description": "Countdown/flash-sale, animacoes de destaque"
+    }
+  }
+}

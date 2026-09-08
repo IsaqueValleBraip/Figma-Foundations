@@ -46,6 +46,14 @@
       "tokens": 25
     },
     {
+      "figma": "Motion",
+      "source": "source/motion.tokens.json",
+      "modes": [
+        "value"
+      ],
+      "tokens": 13
+    },
+    {
       "figma": "↳ Aliases",
       "source": "source/aliases.tokens.json",
       "modes": [
@@ -55,7 +63,7 @@
       "tokens": 81
     }
   ],
-  "declarations": 1089,
+  "declarations": 1102,
   "responsiveOverrides": {
     "tablet": 24,
     "mobile": 24
@@ -77,6 +85,11 @@
     "layout/grid.ts",
     "layout/index.ts",
     "layout/layout.css",
+    "motion/duration.ts",
+    "motion/easing.ts",
+    "motion/index.ts",
+    "motion/motion.css",
+    "motion/scale.ts",
     "sizes/index.ts",
     "sizes/primitives.ts",
     "sizes/radius.ts",

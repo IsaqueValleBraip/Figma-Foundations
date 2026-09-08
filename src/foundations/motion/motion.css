@@ -1,0 +1,18 @@
+/* Gerado por scripts/tokens/build.mjs a partir de source/motion.tokens.json.
+ * Nao editar a mao — rode `npm run tokens:build`. */
+
+:root {
+  --braip-motion-duration-base: 250ms;
+  --braip-motion-duration-fast: 150ms;
+  --braip-motion-duration-instant: 100ms;
+  --braip-motion-duration-slow: 400ms;
+  --braip-motion-duration-slower: 600ms;
+  --braip-motion-easing-enter: cubic-bezier(0.05, 0.7, 0.1, 1);
+  --braip-motion-easing-exit: cubic-bezier(0.3, 0, 0.8, 0.15);
+  --braip-motion-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+  --braip-motion-value-duration-100: 100ms;
+  --braip-motion-value-duration-150: 150ms;
+  --braip-motion-value-duration-250: 250ms;
+  --braip-motion-value-duration-400: 400ms;
+  --braip-motion-value-duration-600: 600ms;
+}

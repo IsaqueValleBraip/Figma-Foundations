@@ -145,12 +145,28 @@ for (const viewport of ['tablet', 'mobile']) {
 }
 writeFile('src/foundations/layout/layout.css', layoutCss.join('\n'))
 
+// ---- motion ----------------------------------------------------------------
+const motionGroups = {
+  scale: { export: 'durationScale', filter: (d) => d.collection === 'motion' && d.trail[0] === 'value' },
+  duration: { export: 'duration', filter: (d) => d.collection === 'motion' && d.trail[0] === 'duration' },
+  easing: { export: 'easing', filter: (d) => d.collection === 'motion' && d.trail[0] === 'easing' },
+}
+for (const [group, { export: exportName, filter }] of Object.entries(motionGroups))
+  writeFile(`src/foundations/motion/${group}.ts`, tsModule('source/motion.tokens.json', {
+    [exportName]: nest(by(filter)),
+  }))
+writeFile('src/foundations/motion/index.ts',
+  tsBanner('motion/') + "\nexport * from './scale'\nexport * from './duration'\nexport * from './easing'\n")
+writeFile('src/foundations/motion/motion.css',
+  banner('source/motion.tokens.json') + '\n' + cssBlock(by((d) => d.collection === 'motion'), ':root'))
+
 // ---- barris ----------------------------------------------------------------
 writeFile('src/foundations/index.css', banner('src/foundations') + `
 @import './colors/index.css';
 @import './sizes/sizes.css';
 @import './typography/typography.css';
 @import './layout/layout.css';
+@import './motion/motion.css';
 `)
 
 const modeNest = (collection, mode) => nest(by((d) => d.collection === collection && d.mode === mode))
@@ -165,6 +181,7 @@ export * from './colors'
 export * from './sizes'
 export * from './typography'
 export * from './layout'
+export * from './motion'
 
 /* API publica estavel — nomes e formatos preservados desde a primeira versao. */
 export const primitive = ${JSON.stringify(modeNest('primitives', 'value'), null, 2)} as const
@@ -178,6 +195,8 @@ export const typography = ${JSON.stringify(modeNest('typography', 'value'), null
 export const spacing = ${JSON.stringify(modeNest('spacing', 'value'), null, 2)} as const
 
 export const layout = ${JSON.stringify(Object.fromEntries(VIEWPORTS.map((v) => [v, modeNest('layout', v)])), null, 2)} as const
+
+export const motion = ${JSON.stringify(modeNest('motion', 'value'), null, 2)} as const
 
 /**
  * Tokens de Typography e Spacing que resolvem atraves de Layout e portanto mudam
@@ -225,6 +244,9 @@ for (const [group, file] of Object.entries(layoutGroups))
     `\`src/foundations/layout/${file}.ts\` — um valor por viewport`,
     by((d) => d.collection === 'layout' && d.trail[0] === group),
     `\nValores por viewport (desktop, tablet, mobile) — as sobrescritas saem em media queries.\n`)
+for (const [group, { filter }] of Object.entries(motionGroups))
+  writeDoc(`foundations/motion/${group}.md`, `Motion — ${group}`,
+    `\`src/foundations/motion/${group}.ts\``, by(filter))
 
 const indexDoc = (relative, title, files, extra) =>
   writeFile(`docs/${relative}`, docBanner(title, 'build de tokens') + extra +
@@ -237,6 +259,8 @@ indexDoc('foundations/typography/index.md', 'Typography — indice', Object.keys
   `\nExport TS: \`typography\`. CSS: \`typography/typography.css\`.\n`)
 indexDoc('foundations/layout/index.md', 'Layout — indice', Object.values(layoutGroups).map((n) => `${n}.md`),
   `\nExport TS: \`layout.desktop|tablet|mobile\` e \`responsive\`. CSS: \`layout/layout.css\`.\n`)
+indexDoc('foundations/motion/index.md', 'Motion — indice', Object.keys(motionGroups).map((n) => `${n}.md`),
+  `\nExport TS: \`motion\`, \`duration\`, \`easing\`, \`durationScale\`. CSS: \`motion/motion.css\`.\n`)
 
 // ---- manifesto -------------------------------------------------------------
 const manifest = {
@@ -252,7 +276,7 @@ const manifest = {
   outputs: [...new Set(written)].sort(),
 }
 const outputs = []
-for (const dir of ['colors', 'sizes', 'typography', 'layout'])
+for (const dir of ['colors', 'sizes', 'typography', 'layout', 'motion'])
   for (const f of fs.readdirSync(path.join(OUT_DIR, dir))) outputs.push(`${dir}/${f}`)
 manifest.outputs = [...outputs, 'index.ts', 'index.css'].sort()
 writeFile('src/foundations/generated-manifest.json', JSON.stringify(manifest, null, 2))

@@ -15,6 +15,7 @@ export const COLLECTIONS = [
   { file: 'typography', prefix: 'type', figma: 'Typography', modes: ['value'] },
   { file: 'spacing', prefix: 'space', figma: 'Spacing', modes: ['value'] },
   { file: 'layout', prefix: 'layout', figma: 'Layout', modes: ['desktop', 'tablet', 'mobile'] },
+  { file: 'motion', prefix: 'motion', figma: 'Motion', modes: ['value'] },
   // Sem modo proprio no Figma (Mode 1), mas resolve para ❖ Color: herda light/dark.
   { file: 'aliases', prefix: 'alias', figma: '↳ Aliases', modes: ['light', 'dark'], inherits: 'colors' },
 ]
@@ -118,7 +119,11 @@ export const cssVar = (prefix, trail) =>
 
 export const formatValue = (value, type) => {
   if (value === null || value === undefined) return null
+  // Figma guarda a curva como os quatro argumentos crus ("0.2, 0, 0, 1").
+  if (type === 'cubicBezier')
+    return `cubic-bezier(${String(value).split(',').map((n) => n.trim()).join(', ')})`
   if (typeof value !== 'number') return String(value)
+  if (type === 'duration') return `${Math.round(value)}ms`
   const unitless = type === 'number' || type === 'fontWeight'
   return unitless ? String(value) : `${Math.round(value * 1000) / 1000}px`
 }
