@@ -30,7 +30,7 @@
   --braip-alias-orange-secondary: #774700;
   --braip-alias-orange-tertiary: #BA7002;
   --braip-alias-orange-text: #FFAF36;
-  --braip-alias-overlay-hover: #50505733;
+  --braip-alias-overlay-hover: #41414633;
   --braip-alias-overlay-pressed: #FFFFFF80;
   --braip-alias-pink-primary: #FF3FCE29;
   --braip-alias-pink-secondary: #79005B;
@@ -72,7 +72,6 @@
   --braip-color-aux-blue-text-tertiary: #1571CD;
   --braip-color-aux-green-icons-secundary: #4BB639;
   --braip-color-aux-green-icons-tertiary: #399929;
-  --braip-color-aux-green-states-disable: #5EC34D52;
   --braip-color-aux-green-states-primary: #5EC34D3D;
   --braip-color-aux-green-states-secundary: #5EC34D80;
   --braip-color-aux-green-surface-secundary: #4BB639;
@@ -136,8 +135,8 @@
   --braip-color-brand-accent-icons-secundary: #7ACC29;
   --braip-color-brand-accent-icons-tertiary: #5C991F;
   --braip-color-brand-accent-states-disable: #62628452;
-  --braip-color-brand-accent-states-primary: #99FF363D;
-  --braip-color-brand-accent-states-secundary: #99FF3666;
+  --braip-color-brand-accent-states-primary: #99FF333D;
+  --braip-color-brand-accent-states-secundary: #99FF3366;
   --braip-color-brand-accent-surface-secundary: #5C991F;
   --braip-color-brand-accent-surface-tertiary: #3D6614;
   --braip-color-brand-accent-text-secundary: #7ACC29;
@@ -182,7 +181,7 @@
   --braip-color-effect-red-60: #FE5F5F99;
   --braip-color-effect-red-80: #FE5F5FCC;
   --braip-color-global-base-dark-overlay: #FFFFFF80;
-  --braip-color-global-base-hover-overlay: #50505733;
+  --braip-color-global-base-hover-overlay: #41414633;
   --braip-color-global-base-pressed-overlay: #FFFFFF33;
   --braip-color-global-bg-aside: #0D0D12;
   --braip-color-global-bg-brand-secondary: #28283B;

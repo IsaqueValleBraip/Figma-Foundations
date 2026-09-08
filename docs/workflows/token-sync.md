@@ -18,6 +18,35 @@ elimina por construcao a classe de bug em que o alias nao encontra o alvo.
 Substituir os arquivos em `src/foundations/source/*.tokens.json` pelo resultado da
 exportacao, preservando o formato (`_meta`, modos, referencias, descricoes).
 
+## 2b. Cores aliasadas com opacidade
+
+O Figma passou a permitir compor opacidade **preservando o alias** — internamente um
+`VARIABLE_EXPRESSION` / `COMPOSE_COLOR`, com `[alias, opacidade]` como argumentos.
+Antes disso o unico jeito era congelar o resultado num hex bruto (`#5EC34D52`), o que
+quebrava o vinculo com o primitive e deixava o valor apodrecer quando a paleta mudava.
+
+No espelho isso vira um valor estruturado no lugar do hex:
+
+```json
+"ghost": {
+  "$type": "color",
+  "$value": {
+    "light": { "$alias": "{colors/auxiliary/green/600}", "$alpha": 0.32 },
+    "dark":  { "$alias": "{colors/auxiliary/green/600}", "$alpha": 0.32 }
+  }
+}
+```
+
+`$alpha` e fracao (0..1). O build resolve o alias ate o literal e compoe a opacidade
+via `withAlpha` (`scripts/tokens/lib.mjs`), emitindo `#RRGGBBAA` — a saida gerada
+continua no mesmo formato de antes, so a origem passa a ser rastreavel.
+
+**Atencao:** o exportador DTCG do MCP `figma-console` ainda nao entende
+`VARIABLE_EXPRESSION` — ele descarta esses valores com o aviso
+`COLOR value isn't an RGB object`. Enquanto isso nao for corrigido upstream, esses
+tokens precisam ser extraidos do Bridge via `figma_execute`, lendo
+`valuesByMode` e resolvendo `expressionArguments`.
+
 ## 3. Regenerar e validar
 
 ```bash

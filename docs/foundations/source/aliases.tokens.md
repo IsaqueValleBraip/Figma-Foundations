@@ -52,7 +52,7 @@
 | `orange.tertiary` | `--braip-alias-orange-tertiary` | `#FF9900` | — |
 | `orange.text` | `--braip-alias-orange-text` | `#9C5E00` | — |
 | `overlay.hover` | `--braip-alias-overlay-hover` | `#FFFFFF33` | — |
-| `overlay.pressed` | `--braip-alias-overlay-pressed` | `#50505780` | — |
+| `overlay.pressed` | `--braip-alias-overlay-pressed` | `#41414680` | — |
 | `pink.primary` | `--braip-alias-pink-primary` | `#FFE5F9` | — |
 | `pink.quaternary` | `--braip-alias-pink-quaternary` | `#C22199` | — |
 | `pink.secondary` | `--braip-alias-pink-secondary` | `#FFBCEE` | — |

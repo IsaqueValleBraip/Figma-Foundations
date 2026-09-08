@@ -56,6 +56,21 @@ export const lookup = (index, ref) => {
 export const REF = /^\{(.+)\}$/
 
 /**
+ * Compoe opacidade sobre uma cor hex, preservando a semantica de alias na origem.
+ * `alpha` e fracao 0..1. Devolve #RRGGBBAA, ou null se a base nao for hex.
+ */
+export const withAlpha = (base, alpha) => {
+  if (typeof base !== 'string') return null
+  const hex = base.trim()
+  const match = hex.match(/^#([0-9a-fA-F]{6})(?:[0-9a-fA-F]{2})?$/)
+  if (!match) return null
+  if (typeof alpha !== 'number' || !(alpha >= 0 && alpha <= 1)) return null
+  if (alpha === 1) return `#${match[1].toUpperCase()}`
+  const byte = Math.round(alpha * 255).toString(16).padStart(2, '0')
+  return `#${match[1].toUpperCase()}${byte.toUpperCase()}`
+}
+
+/**
  * Resolve um valor ate o literal, seguindo a cadeia de referencias.
  * Devolve { value, chain, error } — nunca lanca, para o validate poder
  * relatar todas as falhas de uma vez em vez de parar na primeira.
@@ -64,6 +79,16 @@ export const resolveValue = (rawValue, mode, index, chain = [], seen = new Set()
   let value = rawValue
 
   if (value && typeof value === 'object' && !Array.isArray(value)) {
+    // Cor aliasada com opacidade (COMPOSE_COLOR no Figma): o alias e preservado,
+    // a opacidade e composta em cima do literal resolvido.
+    if ('$alias' in value) {
+      const base = resolveValue(value.$alias, mode, index, chain, seen)
+      if (base.error) return base
+      const composed = withAlpha(base.value, value.$alpha)
+      if (composed === null)
+        return { value: null, chain: base.chain, error: { kind: 'alpha-nao-aplicavel', ref: value.$alias, chain: base.chain } }
+      return { value: composed, chain: base.chain, error: null }
+    }
     const picked = mode in value ? value[mode] : value.value ?? Object.values(value)[0]
     return resolveValue(picked, mode, index, chain, seen)
   }

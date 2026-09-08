@@ -161,6 +161,9 @@ export const staticColor = {
         "on-surface": "#FFFFFF",
         "primary": "#5EC34D"
       },
+      "states": {
+        "disable": "#5EC34D52"
+      },
       "stroke": {
         "ghost": "#5EC34D3D",
         "primary": "#5EC34D",
@@ -279,18 +282,18 @@ export const staticColor = {
   "brand": {
     "accent": {
       "icons": {
-        "ghost": "#99FF3652",
+        "ghost": "#99FF3352",
         "on-surface": "#19191E",
         "primary": "#99FF33"
       },
       "stroke": {
-        "ghost": "#99FF363D",
+        "ghost": "#99FF333D",
         "primary": "#99FF33",
         "secundary": "#D6FFAD",
         "tertiary": "#F5FFEB"
       },
       "surface": {
-        "ghost": "#99FF3614",
+        "ghost": "#99FF3314",
         "primary": "#99FF33"
       },
       "text": {

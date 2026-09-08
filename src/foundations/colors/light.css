@@ -31,7 +31,7 @@
   --braip-alias-orange-tertiary: #FF9900;
   --braip-alias-orange-text: #9C5E00;
   --braip-alias-overlay-hover: #FFFFFF33;
-  --braip-alias-overlay-pressed: #50505780;
+  --braip-alias-overlay-pressed: #41414680;
   --braip-alias-pink-primary: #FFE5F9;
   --braip-alias-pink-secondary: #FFBCEE;
   --braip-alias-pink-tertiary: #FF3FCE;
@@ -72,7 +72,6 @@
   --braip-color-aux-blue-text-tertiary: #96CAFF;
   --braip-color-aux-green-icons-secundary: #72D761;
   --braip-color-aux-green-icons-tertiary: #8BE37C;
-  --braip-color-aux-green-states-disable: #5DC44B52;
   --braip-color-aux-green-states-primary: #BFFFB4;
   --braip-color-aux-green-states-secundary: #A4F497;
   --braip-color-aux-green-surface-secundary: #72D761;
@@ -123,7 +122,7 @@
   --braip-color-aux-red-text-tertiary: #FF9797;
   --braip-color-aux-yellow-icons-secundary: #FFE24D;
   --braip-color-aux-yellow-icons-tertiary: #FFE871;
-  --braip-color-aux-yellow-states-disable: #98989814;
+  --braip-color-aux-yellow-states-disable: #9D9DAB14;
   --braip-color-aux-yellow-states-primary: #FFF3B5;
   --braip-color-aux-yellow-states-secundary: #FFED8C;
   --braip-color-aux-yellow-surface-ghost: #FFD60014;
@@ -133,7 +132,7 @@
   --braip-color-aux-yellow-text-tertiary: #FFE871;
   --braip-color-brand-accent-icons-secundary: #ADFF5C;
   --braip-color-brand-accent-icons-tertiary: #C2FF85;
-  --braip-color-brand-accent-states-disable: #99FF3614;
+  --braip-color-brand-accent-states-disable: #99FF3314;
   --braip-color-brand-accent-states-primary: #EBFFD6;
   --braip-color-brand-accent-states-secundary: #D6FFAD;
   --braip-color-brand-accent-surface-secundary: #ADFF5C;
@@ -171,17 +170,17 @@
   --braip-color-effect-orange-40: #FF990066;
   --braip-color-effect-orange-60: #FF990099;
   --braip-color-effect-orange-80: #FF9900CC;
-  --braip-color-effect-pink-20: #FF33CC33;
-  --braip-color-effect-pink-40: #FF33CC66;
-  --braip-color-effect-pink-60: #FF33CC99;
-  --braip-color-effect-pink-80: #FF33CCCC;
+  --braip-color-effect-pink-20: #FF3FCE33;
+  --braip-color-effect-pink-40: #FF3FCE66;
+  --braip-color-effect-pink-60: #FF3FCE99;
+  --braip-color-effect-pink-80: #FF3FCECC;
   --braip-color-effect-red-20: #FF2E2E33;
   --braip-color-effect-red-40: #FF2E2E66;
   --braip-color-effect-red-60: #FF2E2E99;
   --braip-color-effect-red-80: #FF2E2ECC;
-  --braip-color-global-base-dark-overlay: #50505780;
+  --braip-color-global-base-dark-overlay: #41414680;
   --braip-color-global-base-hover-overlay: #FFFFFF33;
-  --braip-color-global-base-pressed-overlay: #50505733;
+  --braip-color-global-base-pressed-overlay: #41414633;
   --braip-color-global-bg-aside: #F7F7FC;
   --braip-color-global-bg-brand-secondary: #F4F0FF;
   --braip-color-global-bg-primary: #FFFFFF;

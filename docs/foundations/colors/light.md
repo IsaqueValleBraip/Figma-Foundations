@@ -3,7 +3,7 @@
 > Gerado por `scripts/tokens/build.mjs`. Nao editar a mao.
 > Origem: tokens que mudam por tema
 
-255 tokens.
+254 tokens.
 
 | Token | Variavel CSS | Valor | Descricao |
 |---|---|---|---|
@@ -36,7 +36,7 @@
 | `orange.tertiary` | `--braip-alias-orange-tertiary` | `#FF9900` | — |
 | `orange.text` | `--braip-alias-orange-text` | `#9C5E00` | — |
 | `overlay.hover` | `--braip-alias-overlay-hover` | `#FFFFFF33` | — |
-| `overlay.pressed` | `--braip-alias-overlay-pressed` | `#50505780` | — |
+| `overlay.pressed` | `--braip-alias-overlay-pressed` | `#41414680` | — |
 | `pink.primary` | `--braip-alias-pink-primary` | `#FFE5F9` | — |
 | `pink.secondary` | `--braip-alias-pink-secondary` | `#FFBCEE` | — |
 | `pink.tertiary` | `--braip-alias-pink-tertiary` | `#FF3FCE` | — |
@@ -77,7 +77,6 @@
 | `aux.blue.text.tertiary` | `--braip-color-aux-blue-text-tertiary` | `#96CAFF` | — |
 | `aux.green.icons.secundary` | `--braip-color-aux-green-icons-secundary` | `#72D761` | — |
 | `aux.green.icons.tertiary` | `--braip-color-aux-green-icons-tertiary` | `#8BE37C` | — |
-| `aux.green.states.disable` | `--braip-color-aux-green-states-disable` | `#5DC44B52` | — |
 | `aux.green.states.primary` | `--braip-color-aux-green-states-primary` | `#BFFFB4` | — |
 | `aux.green.states.secundary` | `--braip-color-aux-green-states-secundary` | `#A4F497` | — |
 | `aux.green.surface.secundary` | `--braip-color-aux-green-surface-secundary` | `#72D761` | — |
@@ -128,7 +127,7 @@
 | `aux.red.text.tertiary` | `--braip-color-aux-red-text-tertiary` | `#FF9797` | — |
 | `aux.yellow.icons.secundary` | `--braip-color-aux-yellow-icons-secundary` | `#FFE24D` | — |
 | `aux.yellow.icons.tertiary` | `--braip-color-aux-yellow-icons-tertiary` | `#FFE871` | — |
-| `aux.yellow.states.disable` | `--braip-color-aux-yellow-states-disable` | `#98989814` | — |
+| `aux.yellow.states.disable` | `--braip-color-aux-yellow-states-disable` | `#9D9DAB14` | — |
 | `aux.yellow.states.primary` | `--braip-color-aux-yellow-states-primary` | `#FFF3B5` | — |
 | `aux.yellow.states.secundary` | `--braip-color-aux-yellow-states-secundary` | `#FFED8C` | — |
 | `aux.yellow.surface.ghost` | `--braip-color-aux-yellow-surface-ghost` | `#FFD60014` | — |
@@ -138,7 +137,7 @@
 | `aux.yellow.text.tertiary` | `--braip-color-aux-yellow-text-tertiary` | `#FFE871` | — |
 | `brand.accent.icons.secundary` | `--braip-color-brand-accent-icons-secundary` | `#ADFF5C` | — |
 | `brand.accent.icons.tertiary` | `--braip-color-brand-accent-icons-tertiary` | `#C2FF85` | — |
-| `brand.accent.states.disable` | `--braip-color-brand-accent-states-disable` | `#99FF3614` | — |
+| `brand.accent.states.disable` | `--braip-color-brand-accent-states-disable` | `#99FF3314` | — |
 | `brand.accent.states.primary` | `--braip-color-brand-accent-states-primary` | `#EBFFD6` | — |
 | `brand.accent.states.secundary` | `--braip-color-brand-accent-states-secundary` | `#D6FFAD` | — |
 | `brand.accent.surface.secundary` | `--braip-color-brand-accent-surface-secundary` | `#ADFF5C` | — |
@@ -176,17 +175,17 @@
 | `effect.orange.40` | `--braip-color-effect-orange-40` | `#FF990066` | — |
 | `effect.orange.60` | `--braip-color-effect-orange-60` | `#FF990099` | — |
 | `effect.orange.80` | `--braip-color-effect-orange-80` | `#FF9900CC` | — |
-| `effect.pink.20` | `--braip-color-effect-pink-20` | `#FF33CC33` | — |
-| `effect.pink.40` | `--braip-color-effect-pink-40` | `#FF33CC66` | — |
-| `effect.pink.60` | `--braip-color-effect-pink-60` | `#FF33CC99` | — |
-| `effect.pink.80` | `--braip-color-effect-pink-80` | `#FF33CCCC` | — |
+| `effect.pink.20` | `--braip-color-effect-pink-20` | `#FF3FCE33` | — |
+| `effect.pink.40` | `--braip-color-effect-pink-40` | `#FF3FCE66` | — |
+| `effect.pink.60` | `--braip-color-effect-pink-60` | `#FF3FCE99` | — |
+| `effect.pink.80` | `--braip-color-effect-pink-80` | `#FF3FCECC` | — |
 | `effect.red.20` | `--braip-color-effect-red-20` | `#FF2E2E33` | — |
 | `effect.red.40` | `--braip-color-effect-red-40` | `#FF2E2E66` | — |
 | `effect.red.60` | `--braip-color-effect-red-60` | `#FF2E2E99` | — |
 | `effect.red.80` | `--braip-color-effect-red-80` | `#FF2E2ECC` | — |
-| `global.base.dark-overlay` | `--braip-color-global-base-dark-overlay` | `#50505780` | — |
+| `global.base.dark-overlay` | `--braip-color-global-base-dark-overlay` | `#41414680` | — |
 | `global.base.hover-overlay` | `--braip-color-global-base-hover-overlay` | `#FFFFFF33` | — |
-| `global.base.pressed-overlay` | `--braip-color-global-base-pressed-overlay` | `#50505733` | — |
+| `global.base.pressed-overlay` | `--braip-color-global-base-pressed-overlay` | `#41414633` | — |
 | `global.bg.aside` | `--braip-color-global-bg-aside` | `#F7F7FC` | — |
 | `global.bg.brand-secondary` | `--braip-color-global-bg-brand-secondary` | `#F4F0FF` | — |
 | `global.bg.primary` | `--braip-color-global-bg-primary` | `#FFFFFF` | — |

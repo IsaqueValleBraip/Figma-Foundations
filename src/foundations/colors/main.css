@@ -38,6 +38,7 @@
   --braip-color-aux-green-icons-ghost: #5EC34D52;
   --braip-color-aux-green-icons-on-surface: #FFFFFF;
   --braip-color-aux-green-icons-primary: #5EC34D;
+  --braip-color-aux-green-states-disable: #5EC34D52;
   --braip-color-aux-green-stroke-ghost: #5EC34D3D;
   --braip-color-aux-green-stroke-primary: #5EC34D;
   --braip-color-aux-green-stroke-secundary: #A4F497;
@@ -93,14 +94,14 @@
   --braip-color-aux-yellow-surface-primary: #FFD600;
   --braip-color-aux-yellow-text-on-surface: #FFFFFF;
   --braip-color-aux-yellow-text-primary: #FFD600;
-  --braip-color-brand-accent-icons-ghost: #99FF3652;
+  --braip-color-brand-accent-icons-ghost: #99FF3352;
   --braip-color-brand-accent-icons-on-surface: #19191E;
   --braip-color-brand-accent-icons-primary: #99FF33;
-  --braip-color-brand-accent-stroke-ghost: #99FF363D;
+  --braip-color-brand-accent-stroke-ghost: #99FF333D;
   --braip-color-brand-accent-stroke-primary: #99FF33;
   --braip-color-brand-accent-stroke-secundary: #D6FFAD;
   --braip-color-brand-accent-stroke-tertiary: #F5FFEB;
-  --braip-color-brand-accent-surface-ghost: #99FF3614;
+  --braip-color-brand-accent-surface-ghost: #99FF3314;
   --braip-color-brand-accent-surface-primary: #99FF33;
   --braip-color-brand-accent-text-on-surface: #19191E;
   --braip-color-brand-accent-text-primary: #99FF33;

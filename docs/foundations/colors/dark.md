@@ -3,7 +3,7 @@
 > Gerado por `scripts/tokens/build.mjs`. Nao editar a mao.
 > Origem: tokens que mudam por tema
 
-257 tokens.
+256 tokens.
 
 | Token | Variavel CSS | Valor | Descricao |
 |---|---|---|---|
@@ -35,7 +35,7 @@
 | `orange.secondary` | `--braip-alias-orange-secondary` | `#774700` | — |
 | `orange.tertiary` | `--braip-alias-orange-tertiary` | `#BA7002` | — |
 | `orange.text` | `--braip-alias-orange-text` | `#FFAF36` | — |
-| `overlay.hover` | `--braip-alias-overlay-hover` | `#50505733` | — |
+| `overlay.hover` | `--braip-alias-overlay-hover` | `#41414633` | — |
 | `overlay.pressed` | `--braip-alias-overlay-pressed` | `#FFFFFF80` | — |
 | `pink.primary` | `--braip-alias-pink-primary` | `#FF3FCE29` | — |
 | `pink.secondary` | `--braip-alias-pink-secondary` | `#79005B` | — |
@@ -77,7 +77,6 @@
 | `aux.blue.text.tertiary` | `--braip-color-aux-blue-text-tertiary` | `#1571CD` | — |
 | `aux.green.icons.secundary` | `--braip-color-aux-green-icons-secundary` | `#4BB639` | — |
 | `aux.green.icons.tertiary` | `--braip-color-aux-green-icons-tertiary` | `#399929` | — |
-| `aux.green.states.disable` | `--braip-color-aux-green-states-disable` | `#5EC34D52` | — |
 | `aux.green.states.primary` | `--braip-color-aux-green-states-primary` | `#5EC34D3D` | — |
 | `aux.green.states.secundary` | `--braip-color-aux-green-states-secundary` | `#5EC34D80` | — |
 | `aux.green.surface.secundary` | `--braip-color-aux-green-surface-secundary` | `#4BB639` | — |
@@ -141,8 +140,8 @@
 | `brand.accent.icons.secundary` | `--braip-color-brand-accent-icons-secundary` | `#7ACC29` | — |
 | `brand.accent.icons.tertiary` | `--braip-color-brand-accent-icons-tertiary` | `#5C991F` | — |
 | `brand.accent.states.disable` | `--braip-color-brand-accent-states-disable` | `#62628452` | — |
-| `brand.accent.states.primary` | `--braip-color-brand-accent-states-primary` | `#99FF363D` | — |
-| `brand.accent.states.secundary` | `--braip-color-brand-accent-states-secundary` | `#99FF3666` | — |
+| `brand.accent.states.primary` | `--braip-color-brand-accent-states-primary` | `#99FF333D` | — |
+| `brand.accent.states.secundary` | `--braip-color-brand-accent-states-secundary` | `#99FF3366` | — |
 | `brand.accent.surface.secundary` | `--braip-color-brand-accent-surface-secundary` | `#5C991F` | — |
 | `brand.accent.surface.tertiary` | `--braip-color-brand-accent-surface-tertiary` | `#3D6614` | — |
 | `brand.accent.text.secundary` | `--braip-color-brand-accent-text-secundary` | `#7ACC29` | — |
@@ -187,7 +186,7 @@
 | `effect.red.60` | `--braip-color-effect-red-60` | `#FE5F5F99` | — |
 | `effect.red.80` | `--braip-color-effect-red-80` | `#FE5F5FCC` | — |
 | `global.base.dark-overlay` | `--braip-color-global-base-dark-overlay` | `#FFFFFF80` | — |
-| `global.base.hover-overlay` | `--braip-color-global-base-hover-overlay` | `#50505733` | — |
+| `global.base.hover-overlay` | `--braip-color-global-base-hover-overlay` | `#41414633` | — |
 | `global.base.pressed-overlay` | `--braip-color-global-base-pressed-overlay` | `#FFFFFF33` | — |
 | `global.bg.aside` | `--braip-color-global-bg-aside` | `#0D0D12` | — |
 | `global.bg.brand-secondary` | `--braip-color-global-bg-brand-secondary` | `#28283B` | — |

@@ -30,7 +30,6 @@ export const lightColor = {
         "tertiary": "#8BE37C"
       },
       "states": {
-        "disable": "#5DC44B52",
         "primary": "#BFFFB4",
         "secundary": "#A4F497"
       },
@@ -131,7 +130,7 @@ export const lightColor = {
         "tertiary": "#FFE871"
       },
       "states": {
-        "disable": "#98989814",
+        "disable": "#9D9DAB14",
         "primary": "#FFF3B5",
         "secundary": "#FFED8C"
       },
@@ -153,7 +152,7 @@ export const lightColor = {
         "tertiary": "#C2FF85"
       },
       "states": {
-        "disable": "#99FF3614",
+        "disable": "#99FF3314",
         "primary": "#EBFFD6",
         "secundary": "#D6FFAD"
       },
@@ -222,10 +221,10 @@ export const lightColor = {
       "80": "#FF9900CC"
     },
     "pink": {
-      "20": "#FF33CC33",
-      "40": "#FF33CC66",
-      "60": "#FF33CC99",
-      "80": "#FF33CCCC"
+      "20": "#FF3FCE33",
+      "40": "#FF3FCE66",
+      "60": "#FF3FCE99",
+      "80": "#FF3FCECC"
     },
     "red": {
       "20": "#FF2E2E33",
@@ -236,9 +235,9 @@ export const lightColor = {
   },
   "global": {
     "base": {
-      "dark-overlay": "#50505780",
+      "dark-overlay": "#41414680",
       "hover-overlay": "#FFFFFF33",
-      "pressed-overlay": "#50505733"
+      "pressed-overlay": "#41414633"
     },
     "bg": {
       "aside": "#F7F7FC",
@@ -405,7 +404,7 @@ export const lightAlias = {
   },
   "overlay": {
     "hover": "#FFFFFF33",
-    "pressed": "#50505780"
+    "pressed": "#41414680"
   },
   "pink": {
     "primary": "#FFE5F9",

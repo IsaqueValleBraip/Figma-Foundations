@@ -3,7 +3,7 @@
 > Gerado por `scripts/tokens/build.mjs`. Nao editar a mao.
 > Origem: tokens identicos em light e dark
 
-245 tokens.
+246 tokens.
 
 | Token | Variavel CSS | Valor | Descricao |
 |---|---|---|---|
@@ -43,6 +43,7 @@
 | `aux.green.icons.ghost` | `--braip-color-aux-green-icons-ghost` | `#5EC34D52` | — |
 | `aux.green.icons.on-surface` | `--braip-color-aux-green-icons-on-surface` | `#FFFFFF` | — |
 | `aux.green.icons.primary` | `--braip-color-aux-green-icons-primary` | `#5EC34D` | — |
+| `aux.green.states.disable` | `--braip-color-aux-green-states-disable` | `#5EC34D52` | — |
 | `aux.green.stroke.ghost` | `--braip-color-aux-green-stroke-ghost` | `#5EC34D3D` | — |
 | `aux.green.stroke.primary` | `--braip-color-aux-green-stroke-primary` | `#5EC34D` | — |
 | `aux.green.stroke.secundary` | `--braip-color-aux-green-stroke-secundary` | `#A4F497` | — |
@@ -98,14 +99,14 @@
 | `aux.yellow.surface.primary` | `--braip-color-aux-yellow-surface-primary` | `#FFD600` | — |
 | `aux.yellow.text.on-surface` | `--braip-color-aux-yellow-text-on-surface` | `#FFFFFF` | — |
 | `aux.yellow.text.primary` | `--braip-color-aux-yellow-text-primary` | `#FFD600` | — |
-| `brand.accent.icons.ghost` | `--braip-color-brand-accent-icons-ghost` | `#99FF3652` | — |
+| `brand.accent.icons.ghost` | `--braip-color-brand-accent-icons-ghost` | `#99FF3352` | — |
 | `brand.accent.icons.on-surface` | `--braip-color-brand-accent-icons-on-surface` | `#19191E` | — |
 | `brand.accent.icons.primary` | `--braip-color-brand-accent-icons-primary` | `#99FF33` | — |
-| `brand.accent.stroke.ghost` | `--braip-color-brand-accent-stroke-ghost` | `#99FF363D` | — |
+| `brand.accent.stroke.ghost` | `--braip-color-brand-accent-stroke-ghost` | `#99FF333D` | — |
 | `brand.accent.stroke.primary` | `--braip-color-brand-accent-stroke-primary` | `#99FF33` | — |
 | `brand.accent.stroke.secundary` | `--braip-color-brand-accent-stroke-secundary` | `#D6FFAD` | — |
 | `brand.accent.stroke.tertiary` | `--braip-color-brand-accent-stroke-tertiary` | `#F5FFEB` | — |
-| `brand.accent.surface.ghost` | `--braip-color-brand-accent-surface-ghost` | `#99FF3614` | — |
+| `brand.accent.surface.ghost` | `--braip-color-brand-accent-surface-ghost` | `#99FF3314` | — |
 | `brand.accent.surface.primary` | `--braip-color-brand-accent-surface-primary` | `#99FF33` | — |
 | `brand.accent.text.on-surface` | `--braip-color-brand-accent-text-on-surface` | `#19191E` | — |
 | `brand.accent.text.primary` | `--braip-color-brand-accent-text-primary` | `#99FF33` | — |

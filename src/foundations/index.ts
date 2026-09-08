@@ -235,7 +235,7 @@ export const color = {
           "tertiary": "#8BE37C"
         },
         "states": {
-          "disable": "#5DC44B52",
+          "disable": "#5EC34D52",
           "primary": "#BFFFB4",
           "secundary": "#A4F497"
         },
@@ -394,7 +394,7 @@ export const color = {
           "tertiary": "#FFE871"
         },
         "states": {
-          "disable": "#98989814",
+          "disable": "#9D9DAB14",
           "primary": "#FFF3B5",
           "secundary": "#FFED8C"
         },
@@ -421,25 +421,25 @@ export const color = {
     "brand": {
       "accent": {
         "icons": {
-          "ghost": "#99FF3652",
+          "ghost": "#99FF3352",
           "on-surface": "#19191E",
           "primary": "#99FF33",
           "secundary": "#ADFF5C",
           "tertiary": "#C2FF85"
         },
         "states": {
-          "disable": "#99FF3614",
+          "disable": "#99FF3314",
           "primary": "#EBFFD6",
           "secundary": "#D6FFAD"
         },
         "stroke": {
-          "ghost": "#99FF363D",
+          "ghost": "#99FF333D",
           "primary": "#99FF33",
           "secundary": "#D6FFAD",
           "tertiary": "#F5FFEB"
         },
         "surface": {
-          "ghost": "#99FF3614",
+          "ghost": "#99FF3314",
           "primary": "#99FF33",
           "secundary": "#ADFF5C",
           "tertiary": "#C2FF85"
@@ -521,10 +521,10 @@ export const color = {
         "80": "#FF9900CC"
       },
       "pink": {
-        "20": "#FF33CC33",
-        "40": "#FF33CC66",
-        "60": "#FF33CC99",
-        "80": "#FF33CCCC"
+        "20": "#FF3FCE33",
+        "40": "#FF3FCE66",
+        "60": "#FF3FCE99",
+        "80": "#FF3FCECC"
       },
       "purple": {
         "20": "#6D36FB33",
@@ -541,9 +541,9 @@ export const color = {
     },
     "global": {
       "base": {
-        "dark-overlay": "#50505780",
+        "dark-overlay": "#41414680",
         "hover-overlay": "#FFFFFF33",
-        "pressed-overlay": "#50505733",
+        "pressed-overlay": "#41414633",
         "white": "#FFFFFF"
       },
       "bg": {
@@ -916,7 +916,7 @@ export const color = {
     "brand": {
       "accent": {
         "icons": {
-          "ghost": "#99FF3652",
+          "ghost": "#99FF3352",
           "on-surface": "#19191E",
           "primary": "#99FF33",
           "secundary": "#7ACC29",
@@ -924,17 +924,17 @@ export const color = {
         },
         "states": {
           "disable": "#62628452",
-          "primary": "#99FF363D",
-          "secundary": "#99FF3666"
+          "primary": "#99FF333D",
+          "secundary": "#99FF3366"
         },
         "stroke": {
-          "ghost": "#99FF363D",
+          "ghost": "#99FF333D",
           "primary": "#99FF33",
           "secundary": "#D6FFAD",
           "tertiary": "#F5FFEB"
         },
         "surface": {
-          "ghost": "#99FF3614",
+          "ghost": "#99FF3314",
           "primary": "#99FF33",
           "secundary": "#5C991F",
           "tertiary": "#3D6614"
@@ -1037,7 +1037,7 @@ export const color = {
     "global": {
       "base": {
         "dark-overlay": "#FFFFFF80",
-        "hover-overlay": "#50505733",
+        "hover-overlay": "#41414633",
         "pressed-overlay": "#FFFFFF33",
         "white": "#FFFFFF"
       },
@@ -1242,7 +1242,7 @@ export const alias = {
     },
     "overlay": {
       "hover": "#FFFFFF33",
-      "pressed": "#50505780"
+      "pressed": "#41414680"
     },
     "pink": {
       "primary": "#FFE5F9",
@@ -1354,7 +1354,7 @@ export const alias = {
       "text": "#FFAF36"
     },
     "overlay": {
-      "hover": "#50505733",
+      "hover": "#41414633",
       "pressed": "#FFFFFF80"
     },
     "pink": {

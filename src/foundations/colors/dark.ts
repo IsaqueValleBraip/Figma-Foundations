@@ -30,7 +30,6 @@ export const darkColor = {
         "tertiary": "#399929"
       },
       "states": {
-        "disable": "#5EC34D52",
         "primary": "#5EC34D3D",
         "secundary": "#5EC34D80"
       },
@@ -158,8 +157,8 @@ export const darkColor = {
       },
       "states": {
         "disable": "#62628452",
-        "primary": "#99FF363D",
-        "secundary": "#99FF3666"
+        "primary": "#99FF333D",
+        "secundary": "#99FF3366"
       },
       "surface": {
         "secundary": "#5C991F",
@@ -241,7 +240,7 @@ export const darkColor = {
   "global": {
     "base": {
       "dark-overlay": "#FFFFFF80",
-      "hover-overlay": "#50505733",
+      "hover-overlay": "#41414633",
       "pressed-overlay": "#FFFFFF33"
     },
     "bg": {
@@ -408,7 +407,7 @@ export const darkAlias = {
     "text": "#FFAF36"
   },
   "overlay": {
-    "hover": "#50505733",
+    "hover": "#41414633",
     "pressed": "#FFFFFF80"
   },
   "pink": {
