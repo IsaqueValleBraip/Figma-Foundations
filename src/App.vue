@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Button from './components/Button.vue'
+import Button from './components/Button/Button.vue'
 import { alias, spacing, typography, responsive, theme } from './foundations'
 
 const variants = ['primary', 'secondary', 'ghost'] as const
