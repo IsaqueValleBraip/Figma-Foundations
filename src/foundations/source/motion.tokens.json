@@ -78,5 +78,27 @@
       "$value": "{value/duration/600}",
       "$description": "Countdown/flash-sale, animacoes de destaque"
     }
+  },
+  "spring": {
+    "subtle": {
+      "$type": "spring",
+      "$value": "0.35, 1",
+      "$description": "Sem bounce — sheets, drawers, modais (iOS-like). response, dampingRatio"
+    },
+    "smooth": {
+      "$type": "spring",
+      "$value": "0.45, 0.85",
+      "$description": "Overshoot minimo — cards, expand/collapse. response, dampingRatio"
+    },
+    "snappy": {
+      "$type": "spring",
+      "$value": "0.25, 0.9",
+      "$description": "Resposta imediata — toggle, switch, press/release. response, dampingRatio"
+    },
+    "bouncy": {
+      "$type": "spring",
+      "$value": "0.5, 0.7",
+      "$description": "Bounce expressivo — sucesso, badge, celebracao. Usar com parcimonia. response, dampingRatio"
+    }
   }
 }

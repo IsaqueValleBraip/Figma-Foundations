@@ -51,7 +51,7 @@
       "modes": [
         "value"
       ],
-      "tokens": 13
+      "tokens": 17
     },
     {
       "figma": "↳ Aliases",
@@ -63,7 +63,7 @@
       "tokens": 81
     }
   ],
-  "declarations": 1102,
+  "declarations": 1106,
   "responsiveOverrides": {
     "tablet": 24,
     "mobile": 24

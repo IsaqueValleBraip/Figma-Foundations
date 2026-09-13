@@ -1662,6 +1662,12 @@ export const motion = {
     "base": "250ms",
     "slow": "400ms",
     "slower": "600ms"
+  },
+  "spring": {
+    "subtle": "0.35, 1",
+    "smooth": "0.45, 0.85",
+    "snappy": "0.25, 0.9",
+    "bouncy": "0.5, 0.7"
   }
 } as const
 
