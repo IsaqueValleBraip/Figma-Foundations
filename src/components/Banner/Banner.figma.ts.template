@@ -1,0 +1,51 @@
+/* DESLIGADO DE PROPOSITO — nao renomear para .figma.ts ainda.
+ *
+ * O component set de origem e "_Banner" (1422:14281). O prefixo `_` e a
+ * convencao de componente privado da biblioteca Braip Components: o set NAO esta
+ * publicado. `cc:publish` falha ao resolver um no nao publicado, entao manter
+ * este arquivo como `.figma.ts` quebraria o publish de todo o repositorio
+ * (o glob de include e `src/**\/*.figma.ts`).
+ *
+ * Como ativar:
+ *   1. publicar o set no Figma (tirar o prefixo `_` / promover a componente
+ *      publico da biblioteca);
+ *   2. renomear este arquivo para `Banner.figma.ts`;
+ *   3. conferir o node-id, que muda se o set for recriado em vez de renomeado.
+ */
+
+import figma, { html } from '@figma/code-connect/html'
+
+// Component set "_Banner" — Braip Components (nao publicado)
+figma.connect('<FIGMA_LIBRARY>?node-id=1422-14281', {
+  props: {
+    position: figma.enum('Position', { Horizontal: 'horizontal', Vertical: 'vertical' }),
+    size: figma.enum('Size', { Large: 'large', Small: 'small' }),
+    color: figma.enum('Color', {
+      Purple: 'purple',
+      Red: 'red',
+      Orange: 'orange',
+      Blue: 'blue',
+      Green: 'green',
+    }),
+    // As booleans Title/Subtitle so controlam a presenca do texto correspondente.
+    title: figma.boolean('Title', { true: figma.string('↳ Text Title'), false: undefined }),
+    subtitle: figma.boolean('Subtitle', { true: figma.string('↳ Text Subtitle'), false: undefined }),
+    closable: figma.boolean('Close'),
+    icon: figma.boolean('Icon', { true: figma.children('Status'), false: undefined }),
+    action: figma.boolean('Button', { true: figma.children('Text/Button'), false: undefined }),
+  },
+  example: (props) => html`
+    <BraipBanner
+      position="${props.position}"
+      size="${props.size}"
+      color="${props.color}"
+      title="${props.title}"
+      subtitle="${props.subtitle}"
+      :closable="${props.closable}"
+      @close="onClose"
+    >
+      <template #icon>${props.icon}</template>
+      <template #action>${props.action}</template>
+    </BraipBanner>
+  `,
+})

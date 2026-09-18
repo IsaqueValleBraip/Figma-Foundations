@@ -1,0 +1,23 @@
+/* DESLIGADO — extensao .template de proposito.
+ *
+ * O componente "Sales Metrics" (2278:1931) NAO esta publicado na biblioteca do
+ * Braip Components. Se este arquivo virar `.figma.ts`, o `npm run cc:publish`
+ * falha ao resolver o no. Renomear para `SalesMetrics.figma.ts` somente depois
+ * que o componente for publicado.
+ */
+import figma, { html } from '@figma/code-connect/html'
+
+// Component "Sales Metrics" — Braip Components
+figma.connect('<FIGMA_LIBRARY>?node-id=2278-1931', {
+  props: {
+    showActions: figma.boolean('Show Actions'),
+  },
+  example: (props) => html`
+    <BraipSalesMetrics :show-actions="${props.showActions}">
+      <template #title>Dashboard</template>
+      <template #actions />
+      <template #chart />
+      <template #table />
+    </BraipSalesMetrics>
+  `,
+})
