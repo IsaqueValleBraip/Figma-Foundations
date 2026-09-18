@@ -5,7 +5,7 @@ figma.connect('<FIGMA_LIBRARY>?node-id=666-48486', {
   props: {
     type: figma.enum('Type', {
       Primary: 'primary',
-      Secundary: 'secundary',
+      Secondary: 'secondary',
       Outline: 'outline',
       Only: 'only',
     }),
@@ -19,17 +19,17 @@ figma.connect('<FIGMA_LIBRARY>?node-id=666-48486', {
     mode: figma.enum('Mode', {
       Normal: 'normal',
       Destructive: 'destructive',
-      Sucess: 'sucess',
+      Success: 'success',
     }),
     // Hover e Pressed sao estados de CSS: so Disabled e Loading viram prop.
     disabled: figma.enum('State', { Disabled: true }),
     loading: figma.enum('State', { Loading: true }),
     label: figma.string('Text'),
-    iconLeft: figma.boolean('Icon left - Show', {
+    iconLeft: figma.boolean('Show icon left', {
       true: figma.instance('Icon left'),
       false: undefined,
     }),
-    iconRight: figma.boolean('Icon right - Show', {
+    iconRight: figma.boolean('Show icon right', {
       true: figma.instance('Icon right'),
       false: undefined,
     }),

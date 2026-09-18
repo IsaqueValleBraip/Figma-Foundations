@@ -2,9 +2,9 @@
 /* Espelha o component set "Icon" (Button Icon) — mesma matriz Type/State/Size/Mode
  * do Common, sem rotulo: a area e quadrada e o unico conteudo e o icone. */
 withDefaults(defineProps<{
-  type?: 'primary' | 'secundary' | 'outline' | 'only'
+  type?: 'primary' | 'secondary' | 'outline' | 'only'
   size?: 'xl' | 'lg' | 'md' | 'sm' | 'xs'
-  mode?: 'normal' | 'destructive' | 'sucess'
+  mode?: 'normal' | 'destructive' | 'success'
   disabled?: boolean
   loading?: boolean
   label: string
@@ -75,22 +75,22 @@ withDefaults(defineProps<{
   --braip-button-icon-fg: var(--braip-alias-on-active);
 }
 
-.braip-button-icon.is-primary.mode-sucess {
+.braip-button-icon.is-primary.mode-success {
   --braip-button-icon-bg: var(--braip-alias-green-quaternary);
   --braip-button-icon-fg: var(--braip-alias-on-active);
 }
 
-.braip-button-icon.is-secundary.mode-normal {
+.braip-button-icon.is-secondary.mode-normal {
   --braip-button-icon-bg: var(--braip-alias-purple-primary);
   --braip-button-icon-fg: var(--braip-alias-bg-branding-aside);
 }
 
-.braip-button-icon.is-secundary.mode-destructive {
+.braip-button-icon.is-secondary.mode-destructive {
   --braip-button-icon-bg: var(--braip-alias-red-primary);
   --braip-button-icon-fg: var(--braip-alias-red-text);
 }
 
-.braip-button-icon.is-secundary.mode-sucess {
+.braip-button-icon.is-secondary.mode-success {
   --braip-button-icon-bg: var(--braip-alias-green-primary);
   --braip-button-icon-fg: var(--braip-alias-green-text);
 }
@@ -107,7 +107,7 @@ withDefaults(defineProps<{
   --braip-button-icon-fg: var(--braip-alias-red-text);
 }
 
-.braip-button-icon.is-outline.mode-sucess {
+.braip-button-icon.is-outline.mode-success {
   --braip-button-icon-fg: var(--braip-alias-green-text);
 }
 
@@ -119,20 +119,20 @@ withDefaults(defineProps<{
   --braip-button-icon-fg: var(--braip-alias-red-text);
 }
 
-.braip-button-icon.is-only.mode-sucess {
+.braip-button-icon.is-only.mode-success {
   --braip-button-icon-fg: var(--braip-alias-green-text);
 }
 
 /* State=Hover */
-.braip-button-icon.is-secundary.mode-normal:hover:not(:disabled) {
+.braip-button-icon.is-secondary.mode-normal:hover:not(:disabled) {
   --braip-button-icon-bg: var(--braip-alias-purple-secondary);
 }
 
-.braip-button-icon.is-secundary.mode-destructive:hover:not(:disabled) {
+.braip-button-icon.is-secondary.mode-destructive:hover:not(:disabled) {
   --braip-button-icon-bg: var(--braip-alias-red-secondary);
 }
 
-.braip-button-icon.is-secundary.mode-sucess:hover:not(:disabled) {
+.braip-button-icon.is-secondary.mode-success:hover:not(:disabled) {
   --braip-button-icon-bg: var(--braip-alias-green-secondary);
 }
 
@@ -149,20 +149,20 @@ withDefaults(defineProps<{
   --braip-button-icon-bd: var(--braip-alias-red-text);
 }
 
-.braip-button-icon.is-outline.mode-sucess:hover:not(:disabled) {
+.braip-button-icon.is-outline.mode-success:hover:not(:disabled) {
   --braip-button-icon-bd: var(--braip-alias-green-text);
 }
 
 /* State=Pressed */
-.braip-button-icon.is-secundary.mode-normal:active:not(:disabled) {
+.braip-button-icon.is-secondary.mode-normal:active:not(:disabled) {
   --braip-button-icon-bg: var(--braip-alias-purple-primary);
 }
 
-.braip-button-icon.is-secundary.mode-destructive:active:not(:disabled) {
+.braip-button-icon.is-secondary.mode-destructive:active:not(:disabled) {
   --braip-button-icon-bg: var(--braip-alias-red-secondary);
 }
 
-.braip-button-icon.is-secundary.mode-sucess:active:not(:disabled) {
+.braip-button-icon.is-secondary.mode-success:active:not(:disabled) {
   --braip-button-icon-bg: var(--braip-alias-green-primary);
 }
 
@@ -176,7 +176,7 @@ withDefaults(defineProps<{
   --braip-button-icon-bd: var(--braip-alias-red-text);
 }
 
-.braip-button-icon.is-outline.mode-sucess:active:not(:disabled) {
+.braip-button-icon.is-outline.mode-success:active:not(:disabled) {
   --braip-button-icon-bg: var(--braip-alias-green-primary);
   --braip-button-icon-bd: var(--braip-alias-green-text);
 }
@@ -189,7 +189,7 @@ withDefaults(defineProps<{
   --braip-button-icon-bg: var(--braip-alias-red-secondary);
 }
 
-.braip-button-icon.is-only.mode-sucess:active:not(:disabled) {
+.braip-button-icon.is-only.mode-success:active:not(:disabled) {
   --braip-button-icon-bg: var(--braip-alias-green-secondary);
 }
 

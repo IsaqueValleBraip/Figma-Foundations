@@ -5,7 +5,7 @@ figma.connect('<FIGMA_LIBRARY>?node-id=672-56654', {
   props: {
     type: figma.enum('Type', {
       Primary: 'primary',
-      Secundary: 'secundary',
+      Secondary: 'secondary',
       Outline: 'outline',
       Only: 'only',
     }),
@@ -19,7 +19,7 @@ figma.connect('<FIGMA_LIBRARY>?node-id=672-56654', {
     mode: figma.enum('Mode', {
       Normal: 'normal',
       Destructive: 'destructive',
-      Sucess: 'sucess',
+      Success: 'success',
     }),
     disabled: figma.enum('State', { Disabled: true }),
     loading: figma.enum('State', { Loading: true }),

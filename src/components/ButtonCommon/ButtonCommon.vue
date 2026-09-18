@@ -1,12 +1,12 @@
 <script setup lang="ts">
 /* Espelha o component set "Common" (Braip Components).
  * Type/Size/Mode mapeiam 1:1 as variantes do Figma; State=Hover/Pressed vira CSS,
- * State=Disabled/Loading vira prop. Grafias `secundary`/`sucess` seguem o Figma de
- * proposito — renomear exige migracao com alias, nao rename silencioso. */
+ * State=Disabled/Loading vira prop. Grafias alinhadas ao Figma apos a padronizacao EN de 2026-09-17
+ * (Secundary->Secondary, Sucess->Success). */
 withDefaults(defineProps<{
-  type?: 'primary' | 'secundary' | 'outline' | 'only'
+  type?: 'primary' | 'secondary' | 'outline' | 'only'
   size?: 'xl' | 'lg' | 'md' | 'sm' | 'xs'
-  mode?: 'normal' | 'destructive' | 'sucess'
+  mode?: 'normal' | 'destructive' | 'success'
   disabled?: boolean
   loading?: boolean
 }>(), { type: 'primary', size: 'xl', mode: 'normal', disabled: false, loading: false })
@@ -98,22 +98,22 @@ withDefaults(defineProps<{
   --braip-common-fg: var(--braip-alias-on-active);
 }
 
-.braip-common.is-primary.mode-sucess {
+.braip-common.is-primary.mode-success {
   --braip-common-bg: var(--braip-alias-green-quaternary);
   --braip-common-fg: var(--braip-alias-on-active);
 }
 
-.braip-common.is-secundary.mode-normal {
+.braip-common.is-secondary.mode-normal {
   --braip-common-bg: var(--braip-alias-purple-primary);
   --braip-common-fg: var(--braip-alias-bg-branding-aside);
 }
 
-.braip-common.is-secundary.mode-destructive {
+.braip-common.is-secondary.mode-destructive {
   --braip-common-bg: var(--braip-alias-red-primary);
   --braip-common-fg: var(--braip-alias-red-text);
 }
 
-.braip-common.is-secundary.mode-sucess {
+.braip-common.is-secondary.mode-success {
   --braip-common-bg: var(--braip-alias-green-primary);
   --braip-common-fg: var(--braip-alias-green-text);
 }
@@ -130,7 +130,7 @@ withDefaults(defineProps<{
   --braip-common-fg: var(--braip-alias-red-text);
 }
 
-.braip-common.is-outline.mode-sucess {
+.braip-common.is-outline.mode-success {
   --braip-common-fg: var(--braip-alias-green-text);
 }
 
@@ -142,20 +142,20 @@ withDefaults(defineProps<{
   --braip-common-fg: var(--braip-alias-red-text);
 }
 
-.braip-common.is-only.mode-sucess {
+.braip-common.is-only.mode-success {
   --braip-common-fg: var(--braip-alias-green-text);
 }
 
 /* State=Hover */
-.braip-common.is-secundary.mode-normal:hover:not(:disabled) {
+.braip-common.is-secondary.mode-normal:hover:not(:disabled) {
   --braip-common-bg: var(--braip-alias-purple-secondary);
 }
 
-.braip-common.is-secundary.mode-destructive:hover:not(:disabled) {
+.braip-common.is-secondary.mode-destructive:hover:not(:disabled) {
   --braip-common-bg: var(--braip-alias-red-secondary);
 }
 
-.braip-common.is-secundary.mode-sucess:hover:not(:disabled) {
+.braip-common.is-secondary.mode-success:hover:not(:disabled) {
   --braip-common-bg: var(--braip-alias-green-secondary);
 }
 
@@ -172,20 +172,20 @@ withDefaults(defineProps<{
   --braip-common-bd: var(--braip-alias-red-text);
 }
 
-.braip-common.is-outline.mode-sucess:hover:not(:disabled) {
+.braip-common.is-outline.mode-success:hover:not(:disabled) {
   --braip-common-bd: var(--braip-alias-green-text);
 }
 
 /* State=Pressed */
-.braip-common.is-secundary.mode-normal:active:not(:disabled) {
+.braip-common.is-secondary.mode-normal:active:not(:disabled) {
   --braip-common-bg: var(--braip-alias-purple-primary);
 }
 
-.braip-common.is-secundary.mode-destructive:active:not(:disabled) {
+.braip-common.is-secondary.mode-destructive:active:not(:disabled) {
   --braip-common-bg: var(--braip-alias-red-secondary);
 }
 
-.braip-common.is-secundary.mode-sucess:active:not(:disabled) {
+.braip-common.is-secondary.mode-success:active:not(:disabled) {
   --braip-common-bg: var(--braip-alias-green-primary);
 }
 
@@ -199,7 +199,7 @@ withDefaults(defineProps<{
   --braip-common-bd: var(--braip-alias-red-text);
 }
 
-.braip-common.is-outline.mode-sucess:active:not(:disabled) {
+.braip-common.is-outline.mode-success:active:not(:disabled) {
   --braip-common-bg: var(--braip-alias-green-primary);
   --braip-common-bd: var(--braip-alias-green-text);
 }
@@ -212,7 +212,7 @@ withDefaults(defineProps<{
   --braip-common-bg: var(--braip-alias-red-secondary);
 }
 
-.braip-common.is-only.mode-sucess:active:not(:disabled) {
+.braip-common.is-only.mode-success:active:not(:disabled) {
   --braip-common-bg: var(--braip-alias-green-secondary);
 }
 
