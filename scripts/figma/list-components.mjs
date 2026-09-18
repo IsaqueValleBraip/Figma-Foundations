@@ -1,9 +1,15 @@
 // Lista componentes publicados do arquivo Figma -> docs/figma-components.json
-// uso: node scripts/list-components.mjs
+// uso: node scripts/figma/list-components.mjs
 import fs from 'node:fs';
 
+// .env mora na raiz do repo; este script vive em scripts/figma/
+const envPath = ['../../.env', '../.env']
+  .map((rel) => new URL(rel, import.meta.url))
+  .find((url) => fs.existsSync(url));
+if (!envPath) throw new Error('.env nao encontrado na raiz do repo');
+
 const env = Object.fromEntries(
-  fs.readFileSync(new URL('../.env', import.meta.url), 'utf8')
+  fs.readFileSync(envPath, 'utf8')
     .split('\n').filter(l => l.includes('=') && !l.trim().startsWith('#'))
     .map(l => [l.slice(0, l.indexOf('=')).trim(), l.slice(l.indexOf('=') + 1).trim()])
 );
@@ -36,6 +42,6 @@ const out = {
   })),
 };
 
-fs.mkdirSync(new URL('../docs/', import.meta.url), { recursive: true });
-fs.writeFileSync(new URL('../docs/figma-components.json', import.meta.url), JSON.stringify(out, null, 2));
+fs.mkdirSync(new URL('../../docs/', import.meta.url), { recursive: true });
+fs.writeFileSync(new URL('../../docs/figma-components.json', import.meta.url), JSON.stringify(out, null, 2));
 console.log(`sets=${out.componentSets.length} components=${out.components.length} -> docs/figma-components.json`);
