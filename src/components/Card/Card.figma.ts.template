@@ -1,0 +1,49 @@
+/* DESLIGADO — extensao .template de proposito.
+ *
+ * O component set "Cards" (1422:16938) NAO esta publicado na biblioteca do
+ * Braip Components. Se este arquivo virar `.figma.ts`, o `npm run cc:publish`
+ * falha ao resolver o no. Renomear para `Card.figma.ts` somente depois que o
+ * set for publicado.
+ */
+import figma, { html } from '@figma/code-connect/html'
+
+// Component set "Cards" — Braip Components
+figma.connect('<FIGMA_LIBRARY>?node-id=1422-16938', {
+  props: {
+    size: figma.enum('Size', {
+      'Extra Large': 'xl',
+      Large: 'lg',
+      Medium: 'md',
+      Small: 'sm',
+      'Extra Small': 'xs',
+    }),
+    direction: figma.enum('Direction', {
+      Vertical: 'vertical',
+      Horizontal: 'horizontal',
+    }),
+    // State=Hover e CSS: nao vira prop.
+    showEyebrow: figma.boolean('Show Eyebrow'),
+    showButtonText: figma.boolean('Show Button Text'),
+    showButton: figma.boolean('Show Button'),
+    showData: figma.boolean('Show Data'),
+    eyebrow: figma.string('Eyebrow'),
+    title: figma.string('Title'),
+    description: figma.string('Description'),
+    data: figma.string('Data'),
+  },
+  example: (props) => html`
+    <BraipCard
+      size="${props.size}"
+      direction="${props.direction}"
+      :show-eyebrow="${props.showEyebrow}"
+      :show-button-text="${props.showButtonText}"
+      :show-button="${props.showButton}"
+      :show-data="${props.showData}"
+    >
+      <template #eyebrow>${props.eyebrow}</template>
+      <template #title>${props.title}</template>
+      <template #description>${props.description}</template>
+      <template #data>${props.data}</template>
+    </BraipCard>
+  `,
+})

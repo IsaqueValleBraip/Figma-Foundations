@@ -1,0 +1,48 @@
+/* Code Connect DESLIGADO de proposito.
+ *
+ * Os component sets de origem — ".Item Arrow" (741:17460) e ".Item Number" (741:17485) —
+ * comecam com ponto, ou seja, sao componentes PRIVADOS da biblioteca Braip Components
+ * e nao estao publicados. Code Connect so publica mapeamentos para componentes
+ * publicados, entao este arquivo fica com a extensao `.figma.ts.template` e nao e
+ * coletado por `cc:parse` / `cc:publish`.
+ *
+ * Alem disso, um unico componente Vue (PaginationItem) cobre DOIS component sets,
+ * o que exigiria duas chamadas figma.connect apontando para o mesmo componente.
+ *
+ * Para ligar: publicar os dois sets no Figma (remover o prefixo "."), renomear este
+ * arquivo para PaginationItem.figma.ts e conferir os node-ids.
+ *
+ * import figma, { html } from '@figma/code-connect/html'
+ *
+ * figma.connect('<FIGMA_LIBRARY>?node-id=741-17485', {
+ *   props: {
+ *     size: figma.enum('Size', { Large: 'lg', Medium: 'md', Small: 'sm' }),
+ *     active: figma.enum('State', { Active: true }),
+ *     disabled: figma.enum('State', { Disabled: true }),
+ *     label: figma.string('Text'),
+ *   },
+ *   example: (props) => html`
+ *     <BraipPaginationItem
+ *       variant="number"
+ *       size="${props.size}"
+ *       :active="${props.active}"
+ *       :disabled="${props.disabled}"
+ *       label="${props.label}"
+ *     />
+ *   `,
+ * })
+ *
+ * figma.connect('<FIGMA_LIBRARY>?node-id=741-17460', {
+ *   props: {
+ *     size: figma.enum('Size', { Large: 'lg', Medium: 'md', Small: 'sm' }),
+ *     disabled: figma.enum('State', { Disabled: true }),
+ *     icon: figma.instance('Arrow'),
+ *   },
+ *   example: (props) => html`
+ *     <BraipPaginationItem variant="arrow" size="${props.size}" :disabled="${props.disabled}">
+ *       ${props.icon}
+ *     </BraipPaginationItem>
+ *   `,
+ * })
+ */
+export {}

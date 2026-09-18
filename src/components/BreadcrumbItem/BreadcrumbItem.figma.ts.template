@@ -1,0 +1,37 @@
+/* DESLIGADO DE PROPOSITO — nao renomear para .figma.ts ainda.
+ *
+ * O component set de origem e ".Breadcrumb-Item" (741:18742). O prefixo `.` e a
+ * convencao de componente privado da biblioteca Braip Components: o set NAO esta
+ * publicado. `cc:publish` falha ao resolver um no nao publicado, entao manter
+ * este arquivo como `.figma.ts` quebraria o publish de todo o repositorio
+ * (o glob de include e `src/**\/*.figma.ts`).
+ *
+ * O consumo publico deste item e via "Breadcrumb-Group" (741:18792), que ja tem
+ * Code Connect ativo em src/components/Breadcrumb/Breadcrumb.figma.ts.
+ *
+ * Como ativar:
+ *   1. publicar o set no Figma (tirar o prefixo `.`);
+ *   2. renomear este arquivo para `BreadcrumbItem.figma.ts`;
+ *   3. conferir o node-id, que muda se o set for recriado em vez de renomeado.
+ */
+
+import figma, { html } from '@figma/code-connect/html'
+
+// Component set ".Breadcrumb-Item" — Braip Components (nao publicado)
+figma.connect('<FIGMA_LIBRARY>?node-id=741-18742', {
+  props: {
+    size: figma.enum('Size', { Small: 'small', Large: 'large' }),
+    // Hover e Pressed sao estados de CSS: so Active e Disabled viram prop.
+    active: figma.enum('State', { Active: true }),
+    disabled: figma.enum('State', { Disabled: true }),
+    label: figma.string('Label'),
+  },
+  example: (props) => html`
+    <BraipBreadcrumbItem
+      size="${props.size}"
+      label="${props.label}"
+      :active="${props.active}"
+      :disabled="${props.disabled}"
+    />
+  `,
+})

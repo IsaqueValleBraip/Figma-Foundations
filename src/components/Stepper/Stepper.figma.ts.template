@@ -1,0 +1,28 @@
+import figma, { html } from "@figma/code-connect/html"
+
+/* Component set "❖ Stepper" — Braip Components, node 848:3887 (18 variantes).
+ *
+ * DESLIGADO (.template) por duas razoes:
+ * 1. Nao existe Stepper.vue ainda — Code Connect sem componente de codigo
+ *    publica um snippet que nao resolve.
+ * 2. A property State mistura dois eixos: estado visual em ingles
+ *    (Default|Error|Alert|Information|Success) e status de negocio em
+ *    portugues (Rascunho|Aprovado|Concluido|Em analise|Incompleto|
+ *    Nao realizado|Reprovado|Pendente). Separar os eixos e decisao de
+ *    design; mapear como esta congelaria a mistura no codigo.
+ *
+ * Type=Perfil|Produto tambem aguarda decisao de vocabulario.
+ * Ao religar: renomear para .figma.ts, rodar cc:parse e cc:publish --dry-run. */
+
+figma.connect(
+  "<FIGMA_LIBRARY>?node-id=848-3887",
+  {
+    props: {
+      title: figma.string("Title"),
+      description: figma.string("Description"),
+      showChevron: figma.boolean("Show Chevron"),
+      showArrow: figma.boolean("Show Arrow"),
+    },
+    example: (props) => html`<stepper />`,
+  },
+)
